@@ -29,7 +29,7 @@ theme1
 body {
 	--main-bg-color: #fff;	
 	--nav-title-color: #212529;
-	--path-color: #E0DFAD;
+	--path-color: #fff;
 	--main-text-color: #AB91B3;
 	--caption-color: #728794;
 	--link-color: #ADBDC7;
@@ -37,8 +37,8 @@ body {
 	/*--button-color: #AB91B3;*/
 	--button-color: #3A407A;
 	--tag-color: #ed8266;
-	--hover-color: black;
-	--hover-bg-color: #E0ADAF;
+	--hover-color: #212529;
+	--hover-bg-color: #ced4da;
 	--selection-color: #E0DFAD;
 	--map-selection-color: #ed8266;
 	--font-multiplier: 1.2;
@@ -50,7 +50,6 @@ body {
 	--main-font: sans-serif;
     z-index: 1;
     margin: auto 0; 
-	height: 100%;
 	font-size: 16px;
 	overflow-y: scroll;
 }
@@ -58,11 +57,10 @@ body {
 h1 {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 2em);
+	font-size: calc(var(--font-multiplier) * 3em);
 	font-weight: bold;
 	margin: 0px 0px 0px 0px;
-	text-align: center;
-	line-height: normal;
+	text-decoaration: none;
 }
 
 .projectTitle h1 {
@@ -113,47 +111,79 @@ footer {
     left: 0px; 
 }
 
+/* navbar */
+
+.nav-grid-container {
+	display: inline-grid;
+	grid-template-columns: repeat( auto-fit, minmax(110px, 200px) );
+	/*grid-auto-rows: auto;*/
+	place-items: stretch stretch;
+	grid-column-gap: 0vw;
+	box-sizing: border-box;
+	direction: rtl;
+	width: 100%;
+}
+
+.nav-grid-container > a {
+	padding: 0vh 0vw 0vh 0vw;
+	background-color: var(--path-color);
+	text-align: center;
+	line-height: 8vh;
+	text-decoration: none;
+	font-family: var(--main-font);
+	color: var(--button-color);
+	font-size: calc(var(--font-multiplier) * 1em);
+}
+
+.nav-grid-container > a:hover {
+    background-color: var(--hover-bg-color);
+	color:  var(--hover-color);
+}
+
 /* splash page */
 
 .splash-grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto;
-	/*grid-auto-rows: auto;*/
+	grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+	/*grid-template-rows: auto auto auto;
+	grid-auto-rows: auto;*/
 	border-bottom: 20px solid var(--main-bg-color);
-	justify-items: center;
-	grid-row-gap: 2vh;
-	grid-column-gap: 3vw;
-	margin: 15px;
-	padding: 10px;
+	place-items: stretch stretch;
+	grid-row-gap: 0vh;
+	grid-column-gap: 0vw;
+	margin: 2vh;
+	padding: 0;
 	box-sizing: border-box;
 }
-
-#splash-grid {
-	
-}
-
-#splash-item1 {
-	grid-column: 1 / span 5;
-	grid-row: 1 / span 1;
+.splash-grid-container > div {
 	padding: 15px;
 	border-radius: 10px;
 	background-color: var(--path-color);
 }
 
+#splash-item0 {
+	grid-column: span 1;
+	grid-row: span 1;
+	text-align: center;
+	line-height: 10vh;
+}
+#splash-item0 > a {
+	text-decoration: none;
+}
+
+#splash-item1 {
+	grid-column: span 4;
+	grid-row: span 1;
+}
+
 #splash-item2 {
-	grid-column: 1 / span 2;
-	grid-row: 2 / span 1;
-	padding: 15px;
-	background-color: var(--caption-color);
-	border-radius: 10px;
+	grid-column: span 2;
+	grid-row: span 1;
 }
 
 #splash-item3 {
-	grid-column: 1 / span 5;
-	grid-row: 3 / span 1;
-	padding: 15px;
-	border-radius: 10px;
+	grid-column: span 5;
+	grid-row: span 1;
 }
 /*
 #splash-item4  {
@@ -167,16 +197,26 @@ footer {
 }
 */
 #splash-item5  {
-	grid-column: 3 / span 3;
-	grid-row: 2 / span 1;
-	padding: 15px;
-	/*background-color: var(--path-color);*/
+	grid-column: span 3;
+	grid-row: span 1;
+	background-color: var(--button-color);
 	/*background-image: url('cover_2.jpg');*/
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 100%;
-	border-radius: 10px;
 	transition: 1.5s;
+}
+
+.funders {
+	margin: auto;
+}
+
+.pitches {
+	padding: 1vh !important;
+	font-family: var(--main-font);
+	color: var(--nav-title-color);
+	font-size: calc(var(--font-multiplier) * 2em);
+	margin: 1vh;
+	text-align: center;
 }
 
 
@@ -552,7 +592,7 @@ h3 > .highlight {
 	border-top-right-radius: 20px;
 }
 */
-/* nav */
+/* nav
 
 ul.navbar{
     list-style-type: none;
@@ -562,11 +602,11 @@ ul.navbar{
 	display: block;
 	height: calc(var(--navheight));
 }
-
+/*
 .li-nav {
     float: right;
 }
-
+*/
 li a {
 	font-family: var(--main-font);
 	/*font-size: calc(var(--font-multiplier) * 1.2em);*/
@@ -579,11 +619,6 @@ li a {
 
 a {
 	/*color: var(--link-color);*/
-}
-
-a:hover {
-    background-color: var(--hover-bg-color);
-	color:  var(--hover-color);
 }
 
 #title {
