@@ -140,6 +140,19 @@ footer {
 	color:  var(--hover-color);
 }
 
+
+.inline-grid {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+	place-items: stretch stretch;
+	grid-row-gap: 0vh;
+	grid-column-gap: 0vw;
+	margin: 2vh;
+	padding: 0;
+	box-sizing: border-box;
+	place-items: center;
+}
+
 /* splash page */
 
 .splash-grid-container {
