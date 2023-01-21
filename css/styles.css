@@ -194,7 +194,7 @@ footer {
 	grid-row: span 1;
 }
 
-#splash-item3 {
+.splash-item3 {
 	grid-column: span 5;
 	grid-row: span 1;
 }
@@ -219,7 +219,11 @@ footer {
 	transition: 1.5s;
 }
 
-.funders {
+.partners {
+	display: flex;
+}
+.partners > img {
+	width: 80%;
 	margin: auto;
 }
 
