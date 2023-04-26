@@ -163,7 +163,7 @@ footer {
 	border-bottom: 20px solid var(--main-bg-color);
 	place-items: stretch stretch;
 	grid-row-gap: 0vh;
-	grid-column-gap: 0vw;
+	column-gap: 0vw;
 	margin: 2vh;
 	padding: 0;
 	box-sizing: border-box;
