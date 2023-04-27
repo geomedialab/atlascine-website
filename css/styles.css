@@ -30,7 +30,7 @@ body {
 	--main-bg-color: #fff;	
 	--nav-title-color: #212529;
 	--path-color: #fff;
-	--main-text-color: #AB91B3;
+	--main-text-color: #000;
 	--caption-color: #728794;
 	--link-color: #ADBDC7;
 	/*--link-color: #C2D5E0;*/
@@ -57,10 +57,10 @@ body {
 h1 {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 3em);
+	font-size: calc(var(--font-multiplier) * 4em);
 	font-weight: bold;
 	margin: 0px 0px 0px 0px;
-	text-decoaration: none;
+	text-decoration: none;
 }
 
 .projectTitle h1 {
@@ -70,7 +70,6 @@ h1 {
 
 h2 {
 	font-family: var(--main-font);
-	color: var(--button-color);
 	font-size: calc(var(--font-multiplier) * 1em);
 	font-weight: normal;
 	display: inline;
@@ -115,7 +114,7 @@ footer {
 
 .nav-grid-container {
 	display: inline-grid;
-	grid-template-columns: repeat( auto-fit, minmax(110px, 200px) );
+	grid-template-columns: repeat( auto-fit, minmax(10%, 15%) );
 	/*grid-auto-rows: auto;*/
 	place-items: stretch stretch;
 	grid-column-gap: 0vw;
@@ -157,46 +156,83 @@ footer {
 
 .splash-grid-container {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
 	/*grid-template-rows: auto auto auto;
 	grid-auto-rows: auto;*/
 	border-bottom: 20px solid var(--main-bg-color);
 	place-items: stretch stretch;
 	grid-row-gap: 0vh;
 	column-gap: 0vw;
-	margin: 2vh;
-	padding: 0;
+	padding: 1vh 2vw 1vh 2vw;
 	box-sizing: border-box;
+	grid-template-areas:
+		"title title nav nav nav nav nav"
+	    "title title note1 note1 note1 note1 note1"
+	    "note2 note2 note2 img img img img"
+		"note3 note3 note3 note3 note3 note3 note3";
 }
+
 .splash-grid-container > div {
-	padding: 15px;
 	border-radius: 10px;
 	background-color: var(--path-color);
+	padding: 2vh 1vw 2vh 1vw;
 }
 
-#splash-item0 {
-	grid-column: span 1;
-	grid-row: span 1;
+.splash-grid-container > div:nth-child(1) {
+	grid-area: nav;
+	display: inline-grid;
+	grid-template-columns: repeat( auto-fit, minmax(15%, 1fr) );
+	/*grid-auto-rows: auto;*/
+	place-items: stretch stretch;
+	grid-column-gap: 0vw;
+	box-sizing: border-box;
+	direction: rtl;
+	padding: 1vh 1vw 1vh 0;
+	line-height: calc(var(--font-multiplier) * 6vh);
+	align-items: center
+}
+
+.splash-grid-container > div:nth-child(1) > a {
+	padding: 0vh 0vw 0vh 0vw;
+	background-color: var(--path-color);
 	text-align: center;
-	line-height: 10vh;
-}
-#splash-item0 > a {
 	text-decoration: none;
+	font-family: var(--main-font);
+	color: var(--button-color);
+	font-size: calc(var(--font-multiplier) * 1.2em);
+	line-height: 4;
 }
 
-#splash-item1 {
-	grid-column: span 4;
-	grid-row: span 1;
+.splash-grid-container > div:nth-child(1) > a:hover {
+    background-color: var(--hover-bg-color);
+	color:  var(--hover-color);
 }
 
-#splash-item2 {
-	grid-column: span 2;
-	grid-row: span 1;
+.splash-grid-container > div:nth-child(2) {
+	grid-area: title;
+	text-align: center;
+}
+.splash-grid-container > div:nth-child(3) {
+	grid-area: note1;
+	font-size: calc(var(--font-multiplier) * 1.2em);
 }
 
-.splash-item3 {
-	grid-column: span 5;
-	grid-row: span 1;
+.splash-grid-container > div:nth-child(4) {
+	grid-area: note2;
+}
+
+.splash-grid-container > div:nth-child(5) {
+	grid-area: img;
+	background-color: var(--button-color);
+	background-image: url('../imgs/Screenshot 2023-04-27 010137.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 1.5s;
+	padding: 0;
+}
+
+.splash-grid-container > div:nth-child(6) {
+	grid-area: note3;
+	
 }
 /*
 #splash-item4  {
@@ -209,15 +245,6 @@ footer {
 	border-radius: 10px;
 }
 */
-#splash-item5  {
-	grid-column: span 3;
-	grid-row: span 1;
-	background-color: var(--button-color);
-	/*background-image: url('cover_2.jpg');*/
-	background-position: center;
-	background-repeat: no-repeat;
-	transition: 1.5s;
-}
 
 .partners {
 	display: flex;
@@ -791,43 +818,55 @@ a {
 
 
 /** Mobile CSS **/
-
-@media all and (max-width: 768px) { 
-          
-      #mapid {
-    
-       top: 55px;
-       width: 100%;
-       height: 47%;
-   
-      }
-      
-      #leftPane {
-       position: absolute;
-       bottom: -5px;
-       width: 100%;
-       height: 50%;
-      }
-     
-     footer {
-      height: 20px;
-  	  width: 100%;
-	  font-weight: bold;
-      text-align: center;
-      color: var(--nav-title-color);
-      bottom: 0px;
+@media (max-width: 700px) {
+	.splash-grid-container > div:nth-child(1) {
+	  grid-template-columns: 1fr;
+	}
 }
-    
-    .mediaWrapper {
+@media all and (max-width: 1000px) { 
+	.splash-grid-container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"nav nav nav nav nav nav nav"
+	    "title title title title title title title"
+		"note1 note1 note1 note1 note1 note1 note1"
+	    "note2 note2 note2 note2 note2 note2 note2"
+		"img img img img img img img"
+		"note3 note3 note3 note3 note3 note3 note3";
+	}
+
+	#mapid {
+
+	top: 55px;
+	width: 100%;
+	height: 47%;
+
+	}
 	
+	#leftPane {
+	position: absolute;
+	bottom: -5px;
+	width: 100%;
+	height: 50%;
+	}
+	
+	footer {
+	height: 20px;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	color: var(--nav-title-color);
+	bottom: 0px;
+	}
+
+	.mediaWrapper {
+
 	width: 100%;
 	border-radius: 5px;
-    box-sizing: border-box;
-      
-    }
-        
-     
-     
+	box-sizing: border-box;
+		
+	}
+
 }
 
 
