@@ -168,7 +168,8 @@ footer {
 		"title title nav nav nav nav nav"
 	    "title title note1 note1 note1 note1 note1"
 	    "note2 note2 note2 img img img img"
-		"note3 note3 note3 note3 note3 note3 note3";
+		"note3 note3 note3 note3 note3 note3 note3"
+		"note4 note4 note4 note4 note4 note4 note4";
 }
 
 .splash-grid-container > div {
@@ -226,6 +227,7 @@ footer {
 	background-image: url('../imgs/Screenshot 2023-04-27 010137.png');
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	transition: 1.5s;
 	padding: 0;
 }
