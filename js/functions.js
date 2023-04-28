@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const div1 = document.querySelector('.splash-grid-container > div:nth-child(1)');
     const div2 = document.querySelector('.splash-grid-container > div:nth-child(2)');
@@ -21,5 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const randomColor = primaryColors[Math.floor(Math.random() * primaryColors.length)];
         circle.setAttribute("fill", randomColor);
     });
+
 });
+
   
