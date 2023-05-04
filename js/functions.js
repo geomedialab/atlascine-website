@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const div1 = document.querySelector('.splash-grid-container > div:nth-child(1)');
     const div2 = document.querySelector('.splash-grid-container > div:nth-child(2)');
@@ -23,6 +21,54 @@ document.addEventListener('DOMContentLoaded', function() {
         circle.setAttribute("fill", randomColor);
     });
 
+    function scrollGallerySlowly() {
+        const gallery = document.querySelector('.gallery');
+        let scrollAmount = 0;
+        const slideTimer = setInterval(function() {
+            gallery.scrollLeft += 1;
+            scrollAmount += 1;
+            if(scrollAmount >= (gallery.childElementCount * gallery.children[0].offsetWidth)) {
+                clearInterval(slideTimer);
+            }
+        }, 10);
+    }
+
+    function scrollGallerySlowly2(el) {
+        const element = document.querySelector(el);
+        let isPaused = false;
+        
+        element.addEventListener('mouseover', function() {
+          isPaused = true;
+        });
+        
+        element.addEventListener('mouseout', function() {
+          isPaused = false;
+        });
+      
+        function scroll() {
+          if (!isPaused) {
+            element.scrollLeft += 1;
+            setTimeout(scroll, 50);
+          } else {
+            setTimeout(scroll, 200);
+          }
+        }
+      
+        scroll();
+      }
+    
+    //scrollGallerySlowly()
+    scrollGallerySlowly2('.gallery');
+
+    function hideSecondChildren(parent) {
+        let children = parent.children;
+        for (let i = 1; i < children.length; i += 2) {
+            children[i].style.display = 'none';
+        }
+    }
+
+    hideSecondChildren(document.querySelector('.gallery'));
+    
 });
 
   
