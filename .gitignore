@@ -1,0 +1,12 @@
+# Dependencies
+/node_modules
+
+# Misc
+/public
+
+# Intellij
+/.idea
+
+# Visual Studio Code
+/.vscode
+.history
