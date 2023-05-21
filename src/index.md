@@ -1,7 +1,7 @@
 ---
 layout: 'base.njk'
 permalink: /
-title: 'My Eleventy Website'
+title: 'Atlascine'
 ---
 
 # Hello World!
