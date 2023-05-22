@@ -1,8 +1,9 @@
 ---
-layout: 'layouts/base.html'
+layout: 'base.html'
+permalink: /
 title: 'Atlascine'
 ---
 
 # Hello World!
 
-- (Contact page)[contact.html]
+- [Contact page](contact)

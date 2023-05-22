@@ -2,7 +2,7 @@
 /node_modules
 
 # Misc
-/public
+/_site
 
 # Visual Studio Code
 /.vscode
