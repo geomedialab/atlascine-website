@@ -1,6 +1,5 @@
 ---
 layout: 'base.njk'
-permalink: /
 title: 'Atlascine'
 ---
 

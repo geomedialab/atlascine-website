@@ -4,11 +4,8 @@
   "description": "private test repository for managing websites on github",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    ,"watch:eleventy": "eleventy --serve"
-    ,"build:eleventy": "ELEVENTY_ENV=development eleventy"
-    ,"start": "npm run watch:eleventy"
-    ,"build": "npm run build:eleventy"
+    "start": "eleventy --serve"
+    ,"build": "eleventy"
   },
   "keywords": [],
   "author": "",
