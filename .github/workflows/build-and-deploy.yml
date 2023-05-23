@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: Build 11ty
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['14.17.6']
+        node-version: ['18.16.0']
 
     steps:
       - uses: actions/checkout@v3
