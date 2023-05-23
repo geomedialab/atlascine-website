@@ -4,8 +4,12 @@
   "description": "private test repository for managing websites on github",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "ELEVENTY_ENV=development eleventy",
+    "start": "npm run watch:eleventy",
+    "build": "npm run build:eleventy",
+    "build:eleventy:prod": "ELEVENTY_ENV=production eleventy",
+    "build:prod": "npm run build:eleventy:prod"
   },
   "keywords": [],
   "author": "",
