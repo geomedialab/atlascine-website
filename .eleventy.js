@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
       includes: '_includes',
       layouts: '_layouts',
       data: '_data',
-      output: '_site',
+      output: 'public',
     },
     templateFormats: ['html', 'md', 'njk','css'],//copy any files with these extensions to _site
     htmlTemplateEngine: 'njk',
