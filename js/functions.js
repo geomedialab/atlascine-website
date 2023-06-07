@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     div2.style.lineHeight = `${totalHeight}px`;
 
     const primaryColors = ["#00abbb", "#5aaa5b", "#bb8c00","#ec5f49","#cf63c4","#6d87ff"];
-    const phrases = document.querySelectorAll("#hi2 h2 span");
+    const phrases = document.querySelectorAll("#colorize h2 span");
     const circles = document.querySelectorAll("svg circle");
 
     phrases.forEach((phrase) => {

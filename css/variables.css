@@ -1,0 +1,31 @@
+/*special google fonts import*/
+/* HK grotesk on font squirrel is good too */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+body {
+	--main-bg-color: #fff;	
+	--nav-title-color: #212529;
+	--path-color: #fff;
+	--main-text-color: #000;
+	--caption-color: #728794;
+	--link-color: #ADBDC7;
+	/*--link-color: #C2D5E0;*/
+	/*--button-color: #AB91B3;*/
+	--button-color: #3A407A;
+	--tag-color: #ed8266;
+	--hover-color: #212529;
+	--hover-bg-color: #ced4da;
+	--selection-color: #E0DFAD;
+	--map-selection-color: #ed8266;
+	--font-multiplier: 1.2;
+	--content-gap: 1em;
+	--item-gap: 0.2em;
+	--default-item-color: rgb(200,200,200);
+	--navheight: 10vh;
+	/*--main-font: var(--main-font);*/
+	--main-font: sans-serif;
+    z-index: 1;
+    margin: auto 0; 
+	font-size: 16px;
+	overflow-y: scroll;
+}
