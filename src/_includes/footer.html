@@ -1,0 +1,49 @@
+<footer class='grid-container add-padding'>
+    <div class="centered">
+        <ul>
+            {% for p in collections.pages %}
+                {% if p.data.redirect %}
+                    <li><a href="{{ p.data.redirect }}" target="_blank">{{ p.data.title | safe }}</a></li>
+                {% else %}
+                <li><a href="{{ p.data.title | slugify }}">{{ p.data.title | safe }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <h2>Projects</h2>
+        <ul>
+            {% for p in collections.projects %}
+                {% if p.data.redirect %}
+                    <li><a href="{{ p.data.redirect }}" target="_blank">{{ p.data.title | safe }}</a></li>
+                {% else %}
+                <li><a href="{{ p.data.title | slugify }}">{{ p.data.title | safe }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="brands">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Social_Sciences_and_Humanities_Research_Council_Logo.svg" />
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Canarie_logo.png" />
+        </div>
+        <div>
+            <img src="https://clyderiveratlas.ca/images/gcrc_logo.png" />
+        </div>
+        <div>
+            <img src="https://www.jechoisismontreal.com/app/uploads/2019/04/concordia-logo.png" />
+        </div>
+        <div>
+            <img src="/imgs/new+COHDS+logo+white+on+black.png" />
+        </div>
+        <div>
+            <img src="https://pagerwanda.ca/wp-content/uploads/2019/03/logo_pr.png" />
+        </div>
+        <div>
+            <img src="/imgs/Logo1-cropped4.png" />
+        </div>
+        <div>
+            <p class="centered">Atlascine would not be possible without its funders, the Social Science and Humanities Research Council and CANARIE, as well as Concordia University for its infrastructures, the Geomatics and Cartographic Research Centre (GCRC) at Carleton University for its development assistance, and Atlascine's founding partners, the Centre for Oral History and Digital Storytelling and Page Rwanda.</p>
+        </div>
+    </div>
+</footer>

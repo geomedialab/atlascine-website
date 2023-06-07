@@ -4,22 +4,16 @@
 		<meta charset="UTF-8">
 		<title>{{ title }}</title>
 		<link rel="shortcut icon" href="imgs/atlascine-logo.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/variables.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout-landing.css" />
 		<script src="https://d3js.org/d3.v7.min.js"></script>
 		<script async type="text/javascript" src="js/functions.js" defer></script>
 	</head>
 	<body>
-		<div class='splash-grid-container'>
-			<div>
-				<a href="https://rs-atlascine.concordia.ca/demo" target="_blank">Demo</a>
-				<a href="https://rs-atlascine.concordia.ca/demo" target="_blank">About</a>
-				<a href="https://rs-atlascine.concordia.ca/demo" target="_blank">Browse atlases</a>
-				<a href="https://github.com/geomedialab/atlascine/wiki" target="_blank">How it works</a>
-			</div>
-			<div>
-				<h1>Atlascine</h1>
-			</div>
-			<div id="hi2">
+		<div class='splash-grid-container grid-container add-padding'>
+			{% include 'navbar.html' %}
+			<div id="colorize">
 				<h2>
 					<!--have these as list items in markdown and formatted as inline, emdash-separated list items -->
 					<span>Create interactive, animated maps from narrative content</span> &mdash;
@@ -33,7 +27,7 @@
 					{{ content | safe }}
 				</h2>
 			</div>
-			<div>
+			<div id="svg-animation">
 				<svg width="100%" height="300px">
 					<circle cx="33%" cy="33%" r="80" stroke="white" stroke-width="2" />
 					<circle cx="33%" cy="33%" r="60" stroke="white" stroke-width="2" />
@@ -51,7 +45,7 @@
 				</svg>
 			</div>
 		</div>
-		<div class="inline-grid">
+		<div class="inline-grid add-padding">
 			<div class="pitches">Upload</div>
 			<div class="pitches">⇢</div>
 			<div class="pitches">Listen</div>
@@ -95,36 +89,30 @@
 			</div>
 		</div>
 		  
-		<div class="splash-grid-container">
-			<p>Atlascine would not be possible without its funders, the Social Science and Humanities Research Council and CANARIE, as well as Concordia University for its infrastructures, the Geomatics and Cartographic Research Centre (GCRC) at Carleton University for its development assistance, and Atlascine's founding partners, the Centre for Oral History and Digital Storytelling and Page Rwanda.</p>
-		</div>
-		<div class="inline-grid">
-			<div class="partners">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Social_Sciences_and_Humanities_Research_Council_Logo.svg" />
+		<!--
+		<div class="inline-grid brands">
+			<div>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Social_Sciences_and_Humanities_Research_Council_Logo.svg" />
 			</div>
-			<div class="partners">
+			<div>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Canarie_logo.png" />
 			</div>
-			<div class="partners">
+			<div>
 				<img src="https://www.jechoisismontreal.com/app/uploads/2019/04/concordia-logo.png" />
 			</div>
-			<div class="partners">
+			<div>
 				<img src="https://clyderiveratlas.ca/images/gcrc_logo.png" />
 			</div>
-			<div class="partners">
+			<div>
 				<img src="imgs/new+COHDS+logo+white+on+black.png" />
 			</div>
-			<div class="partners">
+			<div>
 				<img src="https://pagerwanda.ca/wp-content/uploads/2019/03/logo_pr.png" />
 			</div>
-		</div>		
+		</div>
+		-->
 	</div>
-	<footer>
-		<div class="footer-grid-container">
-			<div class="footer-item1">
-				<a href="
-	</footer>
-	
+	{% include 'footer.html' %}
 
 	</body>
 
