@@ -1,11 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
 
+header {
+	font-family: var(--main-font);
+	color: var(--nav-title-color);
+	font-size: calc(var(--font-multiplier) * 4em);
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	text-decoration: none;
+}
 
 h1 {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 4em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
 	font-weight: bold;
 	margin: 0px 0px 0px 0px;
 	text-decoration: none;
@@ -26,21 +34,41 @@ h2 {
 h3 {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1em);
-	font-weight: regular;
+	font-size: calc(var(--font-multiplier) * .8em);
+	font-weight: normal;
 }
 h4 {
 	font-family: var(--main-font);
 	color: var(--hover-color);
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * .6em);
 	font-weight: regular;
 }
-p {
+p, a {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * 1em);
-	font-weight: regular;
+	font-weight: normal;
 	padding:0px 0px 0px 0px;
+}
+a {
+	color: var(--link-color);
+}
+span {
+	font-family: var(--main-font);
+	color: var(--main-text-color);
+	font-size: calc(var(--font-multiplier) * 1em);
+	font-weight: normal;
+	padding:0px 0px 0px 0px;
+}
+li {
+	font-family: var(--main-font);
+	color: var(--main-text-color);
+	font-size: calc(var(--font-multiplier) * .8em);
+	font-weight: normal;
+	padding:0px 0px 0px 0px;
+}
+img {
+	width: 100%;
 }
 button {
     cursor: pointer;
@@ -49,7 +77,7 @@ button {
 }
 
 .add-padding {
-	padding: 1vh 2vw 1vh 2vw;
+	padding: 2vh 2vw 2vh 2vw;
 }
 
 .centered {
@@ -78,11 +106,6 @@ footer li a {
 	font-size: calc(var(--font-multiplier) * .7em);
 	color: var(--link-color);
 	text-decoration: none;
-}
-
-footer li a:hover {
-	color: var(--button-color);
-	
 }
 
 footer h2 {
@@ -149,18 +172,18 @@ footer > div:nth-child(2) {
 	font-size: calc(var(--font-multiplier) * 1em);
 }
 
-.nav-grid-container > a:hover {
+footer a:hover, .nav-grid-container a:hover {
     background-color: var(--hover-bg-color);
 	color:  var(--hover-color);
 }
 
 .inline-grid {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+	grid-template-columns: repeat(9, 1fr);
 	place-items: stretch stretch;
 	grid-row-gap: 0vh;
 	grid-column-gap: 0vw;
-	padding: 0;
+	padding: 4vh 0 4vh 0;
 	box-sizing: border-box;
 	place-items: center;
 }
@@ -546,10 +569,6 @@ ul.navbar{
 }
 */
 
-a {
-	/*color: var(--link-color);*/
-}
-
 #title {
 	float: left;
 	display: inline-block;
@@ -701,10 +720,25 @@ a {
 }
 */
 
-
 /** Mobile CSS **/
-@media all and (max-width: 1000px) {
 
+@media all and (max-width: 1500px) {
+	.tile-gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.splash-grid-container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"nav nav nav nav nav nav nav"
+	    "title title title title title title title"
+		"note1 note1 note1 note1 note1 note1 note1"
+	    "note2 note2 note2 note2 note2 note2 note2"
+		"img img img img img img img"
+		"note3 note3 note3 note3 note3 note3 note3";
+	}
 	footer {
 		grid-template-areas:
 			"index index index index index index index"
@@ -714,58 +748,22 @@ a {
 	footer > div:nth-child(2) {
 		padding: 0;
 	}
-
-	#mapid {
-
-	top: 55px;
-	width: 100%;
-	height: 47%;
-
+	.tile-gallery {
+		grid-template-columns: 1fr;
 	}
-	
-	#leftPane {
-	position: absolute;
-	bottom: -5px;
-	width: 100%;
-	height: 50%;
-	}
-	
-	
-
-	.mediaWrapper {
-
-	width: 100%;
-	border-radius: 5px;
-	box-sizing: border-box;
-		
-	}
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 700px) {
+	.splash-grid-container > div:nth-child(1) {
+		grid-template-columns: 1fr;
+	}
+	footer > div:nth-child(2) {
+		grid-template-columns: 1fr;
+	}
+	footer > div:nth-child(2) > div {
+		margin: 2vh 0 2vh 0;
+	}
+	.tile-gallery {
+		grid-template-columns: 1fr;
+	}
+}
