@@ -5,5 +5,9 @@
     <a href="https://github.com/geomedialab/atlascine/wiki" target="_blank">How it works</a>
 </div>
 <div>
-    <header>Atlascine</header>
+    {% if landingpage %}
+        <header>Atlascine</header>
+    {% else %}
+        <header><a href="/">Atlascine</a></header>
+    {% endif %}
 </div>

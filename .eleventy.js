@@ -8,6 +8,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("markdownCollection2", function(collection) {
     return collection.getFilteredByGlob("pages/*.md");
   });
+  eleventyConfig.addFilter('main', (content) => {
+    const separator = '<!--section-->';
+    const parts = content.split(separator);
+    return parts[0];
+  });
+  eleventyConfig.addFilter('sidenote', (content) => {
+    const separator = '<!--section-->';
+    const parts = content.split(separator);
+    return parts[1];
+  });
   return {
     dir: {
       input: 'src',
