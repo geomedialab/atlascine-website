@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const randomColor = primaryColors[Math.floor(Math.random() * primaryColors.length)];
         circle.setAttribute("fill", randomColor);
     });
-
+    /*
     function scrollGallerySlowly() {
         const gallery = document.querySelector('.gallery');
         let scrollAmount = 0;
@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
         scroll();
       }
     
-    //scrollGallerySlowly()
     scrollGallerySlowly2('.gallery');
 
     function hideSecondChildren(parent) {
@@ -68,7 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     hideSecondChildren(document.querySelector('.gallery'));
-    
+    */
+    function displayDivOnHover(){
+      const div = document.querySelector('.tile-gallery');
+      for (let i = 0; i <= div.children.length; i += 1) {
+        div.children[i].addEventListener('mouseover', function() {
+          div.children[i].children[0].children[0].style.opacity = 1;
+        });
+        div.children[i].addEventListener('mouseout', function() {
+          div.children[i].children[0].children[0].style.opacity = 0;
+        });
+      }
+    }
+    displayDivOnHover();
+
 });
 
   

@@ -26,7 +26,6 @@
 	place-items: stretch stretch;
 	grid-column-gap: 0vw;
 	box-sizing: border-box;
-	direction: rtl;
 	padding: 1vh 1vw 1vh 0;
 	line-height: calc(var(--font-multiplier) * 6vh);
 	align-items: center
@@ -41,6 +40,9 @@
 	color: var(--button-color);
 	font-size: calc(var(--font-multiplier) * 1.2em);
 	line-height: 4;
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .splash-grid-container > div:nth-child(1) > a:hover {
@@ -88,6 +90,45 @@
 }
 */
 
+.tile-gallery {
+	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+	grid-gap: 0vw;
+}
+
+.tile-gallery p {
+	font-size: calc(var(--font-multiplier) * .8em);
+}
+
+.tile-gallery > a > div {
+	border-radius: 8px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
+
+.tile-gallery > a {
+	text-decoration: none;
+	padding: 1vh;
+}
+
+.tile-gallery > a > div > div {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	padding: 2vw;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background-color: aliceblue;
+	border-radius: 5px;
+	padding: 2vw;
+	margin: 0 2vw 0vh 2vw;
+	max-height: 60%;
+	top: 4vh;
+	position: relative;
+}
+
 .gallery {
 	height: 50vh;
 	overlow-x: auto;
@@ -129,7 +170,7 @@
 }
 
 .pitches {
-	font-family: var(--main-font);
+	font-family: 'Josefin Sans', sans-serif;
 	color: var(--nav-title-color);
 	font-size: calc(var(--font-multiplier) * 2em);
 	margin: 1vh;
@@ -139,23 +180,4 @@
 
 #cover1 {
 	height: 75vh;
-}
-
-/** Mobile CSS **/
-@media (max-width: 700px) {
-	.splash-grid-container > div:nth-child(1) {
-	  grid-template-columns: 1fr;
-	}
-}
-@media all and (max-width: 1000px) {
-	.splash-grid-container {
-		grid-template-columns: 1fr;
-		grid-template-areas:
-		"nav nav nav nav nav nav nav"
-	    "title title title title title title title"
-		"note1 note1 note1 note1 note1 note1 note1"
-	    "note2 note2 note2 note2 note2 note2 note2"
-		"img img img img img img img"
-		"note3 note3 note3 note3 note3 note3 note3";
-	}
 }

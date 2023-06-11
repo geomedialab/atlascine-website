@@ -1,7 +1,7 @@
 ---
 layout: 'basic.html'
 tags: 'pages'	
-permalink: "/{{ title | slugify }}/"
+permalink: "/{{ title | slugify }}"
 title: 'Contact'
 ---
 

@@ -5,8 +5,13 @@
 		<title>{{ title }}</title>
 		<link rel="shortcut icon" href="imgs/atlascine-logo.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/variables.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/layout-landing.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
 		<script src="https://d3js.org/d3.v7.min.js"></script>
 		<script async type="text/javascript" src="js/functions.js" defer></script>
 	</head>
@@ -45,7 +50,7 @@
 				</svg>
 			</div>
 		</div>
-		<div class="inline-grid add-padding">
+		<div class="inline-grid">
 			<div class="pitches">Upload</div>
 			<div class="pitches">⇢</div>
 			<div class="pitches">Listen</div>
@@ -56,13 +61,30 @@
 			<div class="pitches">⇢</div>
 			<div class="pitches">Study</div>
 		</div>
-		<div class="gallery">
-			<div style="background-image: url('imgs/rwanda1.png');">
-				<div>
-					<h2>Atlas of Rwandan Life Stories</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo sit amet arcu malesuada aliquam vel quis ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a massa sapien. Nullam sit amet velit id enim venenatis tempus. Nunc feugiat, metus a eleifend imperdiet, justo tortor feugiat nulla, sit amet feugiat augue nisi nec tortor. Nam gravida luctus diam, eu tincidunt magna sagittis vel. Donec tincidunt sapien quis velit sagittis, in efficitur nulla gravida.</p>
-				</div>
-			</div>
+		<div class="tile-gallery add-padding">
+			{% for p in collections.projects %}
+                {% if p.data.redirect %}
+					<a href="{{ p.data.redirect }}" target="_blank">
+                {% else %}
+                	<a href="{{ p.data.title | slugify }}">
+                {% endif %}
+				{% if p.data.img %}
+						<div style="background-image: url('{{ p.data.img }}');">
+					{% else %}
+						<div style="background-image: url('imgs/black.png');">
+					{% endif %}
+							<div>
+								<h2>{{ p.data.title | safe }}</h2>
+								{% if p.data.description %}
+								<p>{{ p.data.description | safe }}</p>
+								{% else %}
+								<p>{{ p.content | safe }}</p>
+								{% endif %}
+							</div>
+						</div>
+					</a>
+            {% endfor %}
+			<!--
 			<div style="background-image: url('imgs/rwanda1.png');">
 				<div>
 					<h2>La Ville Extraordinaire</h2>
@@ -87,31 +109,8 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo sit amet arcu malesuada aliquam vel quis ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a massa sapien. Nullam sit amet velit id enim venenatis tempus. Nunc feugiat, metus a eleifend imperdiet, justo tortor feugiat nulla, sit amet feugiat augue nisi nec tortor. Nam gravida luctus diam, eu tincidunt magna sagittis vel. Donec tincidunt sapien quis velit sagittis, in efficitur nulla gravida.</p>
 				</div>
 			</div>
+			-->
 		</div>
-		  
-		<!--
-		<div class="inline-grid brands">
-			<div>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Social_Sciences_and_Humanities_Research_Council_Logo.svg" />
-			</div>
-			<div>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Canarie_logo.png" />
-			</div>
-			<div>
-				<img src="https://www.jechoisismontreal.com/app/uploads/2019/04/concordia-logo.png" />
-			</div>
-			<div>
-				<img src="https://clyderiveratlas.ca/images/gcrc_logo.png" />
-			</div>
-			<div>
-				<img src="imgs/new+COHDS+logo+white+on+black.png" />
-			</div>
-			<div>
-				<img src="https://pagerwanda.ca/wp-content/uploads/2019/03/logo_pr.png" />
-			</div>
-		</div>
-		-->
-	</div>
 	{% include 'footer.html' %}
 
 	</body>
