@@ -16,10 +16,17 @@ header a {
 	font-size: calc(var(--font-multiplier) * .8em);
 }
 
+hr {
+	border: 0;
+	height: 1px;
+	background: var(--main-text-color);
+	background-image: linear-gradient(to right,  var(--main-bg-color), var(--main-text-color), var(--main-bg-color));
+}
+
 h1 {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 1.2em);
+	font-size: calc(var(--font-multiplier) * 2em);
 	font-weight: bold;
 	margin: 0px 0px 0px 0px;
 	text-decoration: none;
@@ -37,11 +44,16 @@ h2 {
 	display: inline;
 	padding:0px 0px 0px 0px;
 }
+.note1 h2 {
+	font-size: calc(var(--font-multiplier) * 1.1em);
+	font-style: italic;
+}
 h3 {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * .8em);
 	font-weight: normal;
+	font-style: italic;
 }
 h4 {
 	font-family: var(--main-font);
@@ -66,6 +78,11 @@ span {
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
+ul {
+	list-style: none;
+    padding: 0;
+}
+
 li {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
@@ -73,8 +90,12 @@ li {
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
+li::before {
+    content: "—";
+    margin-right: 0.5em;
+}
 li a {
-	font-size: calc(var(--font-multiplier) * .8em);
+	font-size: calc(var(--font-multiplier) * 1em);
 }
 img {
 	width: 100%;
@@ -105,21 +126,25 @@ footer {
 }
 
 footer ul {
-	list-style-type: none;
+	list-style: none;
 	margin: 0;
 	padding: 0 0 2vh 0;
+}
+footer li::before {
+    content: none;
+    margin-right: 0.5em;
 }
 
 footer li a {
 	font-family: var(--main-font);
-	font-size: calc(var(--font-multiplier) * .7em);
+	font-size: calc(var(--font-multiplier) * 1em);
 	color: var(--link-color);
 	text-decoration: none;
 }
 
 footer h2 {
 	font-family: var(--main-font);
-	font-size: calc(var(--font-multiplier) * .7em);
+	font-size: calc(var(--font-multiplier) * 1em);
 	color: var(--link-color);
 	text-decoration: none;
 	filter: invert(.4);
@@ -731,7 +756,7 @@ ul.navbar{
 
 /** Mobile CSS **/
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 2000px) {
 	.tile-gallery {
 		grid-template-columns: 1fr 1fr;
 	}

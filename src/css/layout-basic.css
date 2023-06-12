@@ -7,16 +7,13 @@
 	grid-auto-rows: auto;*/
 	border-bottom: 20px solid var(--main-bg-color);
 	place-items: stretch stretch;
-	grid-row-gap: 0vh;
-	column-gap: 0vw;
+	grid-row-gap: 5vh;
+	column-gap: 5vw;
 	padding: 1vh 2vw 1vh 2vw;
 	box-sizing: border-box;
 	grid-template-areas:
 		"title nav nav nav nav nav nav"
-	    "note1 note1 note1 note1 note1 note2 note2"
-	    "img img img img img note2 note2"
-		"note3 note3 note3 note3 note3 note3 note3"
-		"note4 note4 note4 note4 note4 note4 note4";
+	    "left-pane note1 note1 note1 note2 . .";
 }
 
 .splash-grid-container > div {
@@ -25,7 +22,7 @@
 	padding: 2vh 1vw 2vh 1vw;
 }
 
-.splash-grid-container > div:nth-child(1) {
+.splash-grid-container > .nav-items {
 	grid-area: nav;
 	display: inline-grid;
 	grid-template-columns: repeat( auto-fit, minmax(15%, 1fr) );
@@ -39,7 +36,35 @@
 	align-items: center
 }
 
-.splash-grid-container > div:nth-child(1) > a {
+.splash-grid-container > .left-pane {
+	grid-area: left-pane;	
+}
+
+.left-pane li {
+	list-style-type: none;
+	line-height: calc(var(--font-multiplier) * 2.4vh);
+	font-size: calc(var(--font-multiplier) * 1em);
+}
+
+.left-pane li::before {
+    content: none;
+    margin-right: 0.5em;
+}
+
+.left-pane li > a {
+	text-decoration: none;
+	color: var(--button-color);
+}
+
+.left-pane li > a:hover {
+	color: var(--hover-color);
+	background-color: var(--tag-color);
+}
+.left-pane > h2 {
+	padding: 2vh 0 2vh 0;
+}
+
+.splash-grid-container > .nav-items > a {
 	padding: 0vh 0vw 0vh 0vw;
 	background-color: var(--path-color);
 	text-align: center;
@@ -50,21 +75,21 @@
 	line-height: 4;
 }
 
-.splash-grid-container > div:nth-child(1) > a:hover {
+.splash-grid-container > .nav-items > a:hover {
     background-color: var(--hover-bg-color);
 	color:  var(--hover-color);
 }
 
-.splash-grid-container > div:nth-child(2) {
+.splash-grid-container > .header {
 	grid-area: title;
 	text-align: center;
 }
-.splash-grid-container > div:nth-child(3) {
+.splash-grid-container > .note1 {
 	grid-area: note1;
 	font-size: calc(var(--font-multiplier) * 1.2em);
 }
 
-.splash-grid-container > div:nth-child(4) {
+.splash-grid-container > .note2 {
 	grid-area: note2;
 }
 
@@ -157,3 +182,26 @@
 	height: 75vh;
 }
 
+@media all and (max-width: 1000px) {
+	.splash-grid-container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+	    "title title title title title title title"
+		"left-pane left-pane left-pane left-pane left-pane left-pane left-pane"
+		"note1 note1 note1 note1 note1 note1 note1";
+	}
+	.splash-grid-container .left-pane {
+		text-align: center;
+	}
+	footer > div:nth-child(1) {
+		text-align: center;
+	}
+	.note1 h1,
+	.note1 h2,
+	.note1 h3,
+	.note1 h4,
+	.note1 h5,
+	.note1 h6 {
+		text-align: center;
+	}
+}

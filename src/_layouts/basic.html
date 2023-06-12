@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>{{ title }}</title>
-		<link rel="shortcut icon" href="imgs/atlascine-logo.ico" type="image/x-icon">
+		<title>Atlascine | {{ title }}</title>
+		<link rel="shortcut icon" href="/imgs/atlascine-logo.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="../css/variables.css" />
 		<link rel="stylesheet" type="text/css" href="../css/main.css" />
 		<link rel="stylesheet" type="text/css" href="../css/layout-basic.css" />
@@ -14,17 +14,23 @@
 		<div class='splash-grid-container grid-container add-padding'>
 			{% set basicpage = true %}
 			{% include 'navbar.html' %}
-			<div class="add-padding">
+
+			<div class="left-pane">
+			{% include 'list-index.html' %}
+			</div>
+			<div class="note1 add-padding">
 				<h1>{{ title }}</h1>
 				<p>
 					{{ content | main | safe }}
 				<p>
 			</div>
-			<div>
+			<!--
+			<div class="note2">
 				<p>
 					{{ content | sidenote | safe }}
 				<p>
 			</div>
+			-->
 		</div>
 		{% include 'footer.html' %}
 	</body>

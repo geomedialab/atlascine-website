@@ -1,15 +1,19 @@
-<div>
-{% for p in collections.navitems %}
-    {% if p.data.redirect %}
-    <a href="{{ p.data.redirect }}" target="_blank">
-    {% else %}
-    <a href="{{ p.data.title | slugify }}">
-    {% endif %}
-    {{ p.data.title | safe }}
-    </a>
-{% endfor %}
-</div>
-<div>
+{% if landingpage %}
+    <div class="nav-items">
+    {% for p in collections.navitems %}
+        {% if p.data.redirect %}
+        <a href="{{ p.data.redirect }}" target="_blank">
+        {% else %}
+        <a href="{{ p.data.title | slugify }}">
+        {% endif %}
+        {{ p.data.title | safe }}
+        </a>
+    {% endfor %}
+    </div>
+{% else %}
+    <!-- render nothing -->
+{% endif %}
+<div class="header">
     {% if landingpage %}
         <header>Atlascine</header>
     {% else %}
