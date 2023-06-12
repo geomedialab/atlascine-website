@@ -123,6 +123,7 @@ footer {
 	grid-template-areas:
 		"index index brands brands brands brands brands"
 		"index index brands brands brands brands brands";
+	margin-top: 5vh;
 }
 
 footer ul {
