@@ -1,8 +1,13 @@
 <div>
-    <a href="https://rs-atlascine.concordia.ca/demo" target="_blank">Demo</a>
-    <a href="https://rs-atlascine.concordia.ca/demo" target="_blank">About</a>
-    <a href="https://rs-atlascine.concordia.ca/demo" target="_blank">Browse atlases</a>
-    <a href="https://github.com/geomedialab/atlascine/wiki" target="_blank">How it works</a>
+{% for p in collections.navitems %}
+    {% if p.data.redirect %}
+    <a href="{{ p.data.redirect }}" target="_blank">
+    {% else %}
+    <a href="{{ p.data.title | slugify }}">
+    {% endif %}
+    {{ p.data.title | safe }}
+    </a>
+{% endfor %}
 </div>
 <div>
     {% if landingpage %}

@@ -2,12 +2,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/imgs/");//add folders to _site
   eleventyConfig.addPassthroughCopy("src/js/");
   eleventyConfig.addPassthroughCopy("CNAME");
-  eleventyConfig.addCollection("markdownCollection", function(collection) {
-    return collection.getFilteredByGlob("projects/*.md");
-  });
-  eleventyConfig.addCollection("markdownCollection2", function(collection) {
-    return collection.getFilteredByGlob("pages/*.md");
-  });
   eleventyConfig.addFilter('main', (content) => {
     const separator = '<!--section-->';
     const parts = content.split(separator);

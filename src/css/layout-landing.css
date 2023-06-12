@@ -101,7 +101,7 @@
 }
 
 .tile-gallery > a > div {
-	border-radius: 8px;
+	/*border-radius: 8px;*/
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -111,7 +111,7 @@
 
 .tile-gallery > a {
 	text-decoration: none;
-	padding: 1vh;
+	/*padding: 1vh;*/
 }
 
 .tile-gallery > a > div > div {

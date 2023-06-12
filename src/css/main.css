@@ -49,7 +49,7 @@ h4 {
 	font-size: calc(var(--font-multiplier) * .6em);
 	font-weight: regular;
 }
-p, a {
+p {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * 1em);
