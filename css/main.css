@@ -4,7 +4,7 @@
 header {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 4em);
+	font-size: calc(var(--font-multiplier) * 5em);
 	font-weight: bold;
 	margin: 0px 0px 0px 0px;
 	text-decoration: none;
@@ -45,7 +45,7 @@ h2 {
 	padding:0px 0px 0px 0px;
 }
 .note1 h2 {
-	font-size: calc(var(--font-multiplier) * 1.1em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
 	font-style: italic;
 }
 h3 {
@@ -64,7 +64,7 @@ h4 {
 p {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * 1.4em);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -74,7 +74,7 @@ a {
 span {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * .8em);
+	font-size: calc(var(--font-multiplier) * 1.4em);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -95,7 +95,7 @@ li::before {
     margin-right: 0.5em;
 }
 li a {
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
 }
 img {
 	width: 100%;
@@ -137,7 +137,7 @@ footer li::before {
 
 footer li a {
 	font-family: var(--main-font);
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * 1.3em);
 	color: var(--link-color);
 	text-decoration: none;
 }

@@ -88,6 +88,10 @@
 	grid-area: note1;
 	font-size: calc(var(--font-multiplier) * 1.2em);
 }
+.note1 p {
+	font-size: calc(var(--font-multiplier) * 1.2em);
+	line-height: 3vh;
+}
 
 .splash-grid-container > .note2 {
 	grid-area: note2;
