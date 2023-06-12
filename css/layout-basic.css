@@ -190,14 +190,11 @@
 	.splash-grid-container {
 		grid-template-columns: 1fr;
 		grid-template-areas:
-	    "title title title title title title title"
 		"left-pane left-pane left-pane left-pane left-pane left-pane left-pane"
+	    "title title title title title title title"
 		"note1 note1 note1 note1 note1 note1 note1";
 	}
 	.splash-grid-container .left-pane {
-		text-align: center;
-	}
-	footer > div:nth-child(1) {
 		text-align: center;
 	}
 	.note1 h1,
