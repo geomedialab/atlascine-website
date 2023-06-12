@@ -38,7 +38,7 @@
 	text-decoration: none;
 	font-family: var(--main-font);
 	color: var(--button-color);
-	font-size: calc(var(--font-multiplier) * 1.2em);
+	font-size: calc(var(--font-multiplier) * 1.4em);
 	line-height: 4;
 	overflow-x: hidden;
 	white-space: nowrap;
@@ -97,7 +97,7 @@
 }
 
 .tile-gallery p {
-	font-size: calc(var(--font-multiplier) * .8em);
+	font-size: calc(var(--font-multiplier) * 1em);
 }
 
 .tile-gallery > a > div {
@@ -172,7 +172,7 @@
 .pitches {
 	font-family: 'Josefin Sans', sans-serif;
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 2em);
+	font-size: calc(var(--font-multiplier) * 2.5em);
 	margin: 1vh;
 	text-align: center;
 }
@@ -181,3 +181,4 @@
 #cover1 {
 	height: 75vh;
 }
+

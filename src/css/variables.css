@@ -17,7 +17,7 @@ body {
 	--hover-bg-color: #ced4da;
 	--selection-color: #E0DFAD;
 	--map-selection-color: #ed8266;
-	--font-multiplier: 1.2;
+	--font-multiplier: 1;
 	--content-gap: 1em;
 	--item-gap: 0.2em;
 	--default-item-color: rgb(200,200,200);
