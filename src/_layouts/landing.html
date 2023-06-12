@@ -62,57 +62,8 @@
 			<div class="pitches">⇢</div>
 			<div class="pitches">Study</div>
 		</div>
-		<div class="tile-gallery add-padding">
-			{% for p in collections.projects %}
-                {% if p.data.redirect %}
-					<a href="{{ p.data.redirect }}" target="_blank">
-                {% else %}
-                	<a href="{{ p.data.title | slugify }}">
-                {% endif %}
-				{% if p.data.img %}
-						<div style="background-image: url('{{ p.data.img }}');">
-					{% else %}
-						<div style="background-image: url('imgs/black.png');">
-					{% endif %}
-							<div>
-								<h1>{{ p.data.title | safe }}</h1>
-								{% if p.data.description %}
-								<p>{{ p.data.description | safe }}</p>
-								{% else %}
-								<p>{{ p.content | safe }}</p>
-								{% endif %}
-							</div>
-						</div>
-					</a>
-            {% endfor %}
-			<!--
-			<div style="background-image: url('imgs/rwanda1.png');">
-				<div>
-					<h2>La Ville Extraordinaire</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo sit amet arcu malesuada aliquam vel quis ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a massa sapien.</p>
-				</div>
-			</div>
-			<div style="background-image: url('imgs/riopelle.png');">
-				<div>
-					<h2>Raconte-moi Riopelle</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo sit amet arcu malesuada aliquam vel quis ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a massa sapien. Nullam sit amet velit id enim venenatis tempus. Nunc feugiat, metus a eleifend imperdiet, justo tortor feugiat nulla, sit amet feugiat augue nisi nec tortor. Nam gravida luctus diam, eu tincidunt magna sagittis vel. Donec tincidunt sapien quis velit sagittis, in efficitur nulla gravida.</p>
-				</div>
-			</div>
-			<div style="background-image: url('imgs/parc.png');">
-				<div>
-					<h2>Intangible Heritage of Parc-Extension</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo sit amet arcu malesuada aliquam vel quis ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a massa sapien.</p>
-				</div>
-			</div>
-			<div style="background-image: url('imgs/black.png');">
-				<div>
-					<h2>Buskers in the City</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo sit amet arcu malesuada aliquam vel quis ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam a massa sapien. Nullam sit amet velit id enim venenatis tempus. Nunc feugiat, metus a eleifend imperdiet, justo tortor feugiat nulla, sit amet feugiat augue nisi nec tortor. Nam gravida luctus diam, eu tincidunt magna sagittis vel. Donec tincidunt sapien quis velit sagittis, in efficitur nulla gravida.</p>
-				</div>
-			</div>
-			-->
-		</div>
-	{% include 'footer.html' %}
+		{% include 'tile-gallery.html' %}
+		{% include 'footer.html' %}
 
 	</body>
 

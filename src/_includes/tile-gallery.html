@@ -1,0 +1,24 @@
+<div class="tile-gallery add-padding">
+    {% for p in collections.projects %}
+        {% if p.data.redirect %}
+            <a href="{{ p.data.redirect }}" target="_blank">
+        {% else %}
+            <a href="{{ p.data.title | slugify }}">
+        {% endif %}
+        {% if p.data.img %}
+                <div style="background-image: url('{{ p.data.img }}');">
+            {% else %}
+                <div style="background-image: url('imgs/black.png');">
+            {% endif %}
+                    <div>
+                        <h1>{{ p.data.title | safe }}</h1>
+                        {% if p.data.description %}
+                        <p>{{ p.data.description | safe }}</p>
+                        {% else %}
+                        <p>{{ p.content | safe }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+    {% endfor %}
+</div>
