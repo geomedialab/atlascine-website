@@ -778,7 +778,9 @@ ul.navbar{
 			"index index index index index index index"
 			"brands brands brands brands brands brands brands";
 	}
-
+	footer > div:nth-child(1) {
+		text-align: center;
+	}
 	footer > div:nth-child(2) {
 		padding: 0;
 	}
