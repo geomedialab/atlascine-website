@@ -13,8 +13,8 @@
 	box-sizing: border-box;
 	grid-template-areas:
 		"title nav nav nav nav nav nav"
-	    ". . note1 note1 . . ."
-	    "note2 note2 img img img img img"
+	    "note1 note1 note1 note1 note1 note2 note2"
+	    "img img img img img note2 note2"
 		"note3 note3 note3 note3 note3 note3 note3"
 		"note4 note4 note4 note4 note4 note4 note4";
 }

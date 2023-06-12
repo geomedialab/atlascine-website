@@ -12,16 +12,41 @@
 	</head>
 	<body>
 		<div class='splash-grid-container grid-container add-padding'>
+			
 			<div>
-    <a href="https://rs-atlascine.concordia.ca/demo" target="_blank">Demo</a>
-    <a href="https://rs-atlascine.concordia.ca/demo" target="_blank">About</a>
-    <a href="https://rs-atlascine.concordia.ca/demo" target="_blank">Browse atlases</a>
-    <a href="https://github.com/geomedialab/atlascine/wiki" target="_blank">How it works</a>
+
+    
+    <a href="about">
+    
+    About
+    </a>
+
+    
+    <a href="https://rs-atlascine.concordia.ca/" target="_blank">
+    
+    Browse atlases
+    </a>
+
+    
+    <a href="how-it-works">
+    
+    How it works
+    </a>
+
+    
+    <a href="https://rs-atlascine.concordia.ca/demo/" target="_blank">
+    
+    Demo
+    </a>
+
 </div>
 <div>
-    <header>Atlascine</header>
+    
+        <header><a href="/">Atlascine</a></header>
+    
 </div>
-			<div>
+			<div class="add-padding">
+				<h1>Contact</h1>
 				<p>
 					<p>For more information about Atlascine or to inquire about collaborations, please contact Sébastien Caquard at <a href="mailto:sebastien.caquard@concordia.ca">sebastien.caquard@concordia.ca</a>.</p>
 <p>For technical inquiries, please contact Emory Shaw at <a href="mailto:emory.shaw@concordia.ca">emory.shaw@concordia.ca</a>.</p>
@@ -29,9 +54,13 @@
 
 				<p>
 			</div>
+			<div>
+				<p>
+					
+				<p>
+			</div>
 		</div>
-	
-	<footer class='grid-container add-padding'>
+		<footer class='grid-container add-padding'>
     <div class="centered">
         <ul>
             
@@ -43,21 +72,13 @@
                 <li><a href="history">History</a></li>
                 
             
+                
+                <li><a href="publications">Publications</a></li>
+                
+            
         </ul>
         <h2>Projects</h2>
         <ul>
-            
-                
-                <li><a href="atlas-of-rwandan-life-stories">Atlas of Rwandan Life Stories</a></li>
-                
-            
-                
-                    <li><a href="https://storytelling.concordia.ca/la-ville-extraordinaire/" target="_blank">La Ville Extraordinaire</a></li>
-                
-            
-                
-                    <li><a href="https://storytelling.concordia.ca/raconte-moi-riopelle/" target="_blank">Tell Me About Riopelle</a></li>
-                
             
                 
                     <li><a href="rs-atlascine.concordia.ca/buskers-in-the-city" target="_blank">Buskers in the City</a></li>
@@ -65,6 +86,18 @@
             
                 
                     <li><a href="https://rs-atlascine.concordia.ca/parcextension" target="_blank">Intangible Heritage of Parc-Extension</a></li>
+                
+            
+                
+                    <li><a href="https://storytelling.concordia.ca/raconte-moi-riopelle/" target="_blank">Tell Me About Riopelle</a></li>
+                
+            
+                
+                <li><a href="atlas-of-rwandan-exiles">Atlas of Rwandan Exiles</a></li>
+                
+            
+                
+                    <li><a href="https://storytelling.concordia.ca/la-ville-extraordinaire/" target="_blank">La Ville Extraordinaire</a></li>
                 
             
         </ul>
@@ -96,8 +129,6 @@
         </div>
     </div>
 </footer>
-	
-
 	</body>
 
 </html>

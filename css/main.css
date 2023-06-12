@@ -9,6 +9,12 @@ header {
 	margin: 0px 0px 0px 0px;
 	text-decoration: none;
 }
+header a {
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--nav-title-color);
+	font-size: calc(var(--font-multiplier) * .8em);
+}
 
 h1 {
 	font-family: var(--main-font);
@@ -43,7 +49,7 @@ h4 {
 	font-size: calc(var(--font-multiplier) * .6em);
 	font-weight: regular;
 }
-p, a {
+p {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * 1em);
@@ -56,7 +62,7 @@ a {
 span {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * .8em);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -66,6 +72,9 @@ li {
 	font-size: calc(var(--font-multiplier) * .8em);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
+}
+li a {
+	font-size: calc(var(--font-multiplier) * .8em);
 }
 img {
 	width: 100%;
