@@ -6,7 +6,7 @@ title: 'About'
 date: 2023-06-11
 ---
 
-The main aim of Atlascine was to streamline the process of transforming audiovisual material into a digital map and to enable a direct interface between audiovisual material, text and the map. With the latest version of the platform, researchers in many disciplines can use the map not only as a way to visually synthesize large volumes of annotated stories and to identify new patterns and structures in these stories, but also to use the map to navigate within the stories themselves and find specific events that link stories and places.
+Allo ! The main aim of Atlascine was to streamline the process of transforming audiovisual material into a digital map and to enable a direct interface between audiovisual material, text and the map. With the latest version of the platform, researchers in many disciplines can use the map not only as a way to visually synthesize large volumes of annotated stories and to identify new patterns and structures in these stories, but also to use the map to navigate within the stories themselves and find specific events that link stories and places.
 
 # Aknowledgements
 
