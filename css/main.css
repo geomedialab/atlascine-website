@@ -227,6 +227,47 @@ footer a:hover, .nav-grid-container a:hover {
 	padding: 2vh 1vw 2vh 1vw;
 }
 
+/* tile-gallery */
+
+.tile-gallery {
+	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+	grid-gap: 0vw;
+}
+
+.tile-gallery p {
+	font-size: calc(var(--font-multiplier) * 1em);
+}
+
+.tile-gallery > a > div {
+	/*border-radius: 8px;*/
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
+
+.tile-gallery > a {
+	text-decoration: none;
+	/*padding: 1vh;*/
+}
+
+.tile-gallery > a > div > div {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	padding: 2vw;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background-color: aliceblue;
+	border-radius: 5px;
+	padding: 2vw;
+	margin: 0 2vw 0vh 2vw;
+	max-height: 60%;
+	top: 4vh;
+	position: relative;
+}
+
 /* left pane */
 
 .introContainer {

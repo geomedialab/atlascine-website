@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Atlascine | Browse atlases</title>
+		<link rel="shortcut icon" href="/imgs/atlascine-logo.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/variables.css" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout-basic.css" />
+		<!--<script src="https://d3js.org/d3.v7.min.js"></script>-->
+		<!--<script async type="text/javascript" src="../js/functions.js" defer></script>-->
+	</head>
+	<body>
+		<div class='splash-grid-container grid-container add-padding'>
+			
+			
+    <!-- render nothing -->
+
+<div class="header">
+    
+        <header><a href="/">Atlascine</a></header>
+    
+</div>
+
+			<div class="left-pane">
+			<ul>
+    
+    
+    <li><a href="/about">About</a></li>
+    
+
+    
+    <li><a href="/browse-atlases">Browse atlases</a></li>
+    
+
+    
+    <li><a href="/how-it-works">How it works</a></li>
+    
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/demo/" target="_blank">
+            Demo
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+
+    
+    <li><a href="/contact">Contact</a></li>
+    
+
+    
+    <li><a href="/history">History</a></li>
+    
+
+    
+    <li><a href="/publications">Publications</a></li>
+    
+
+</ul>
+<ul>
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/buskers-in-the-city/index.html?module=module.stories" target="_blank">
+            Buskers in the City
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/parcextension" target="_blank">
+            Intangible Heritage of Parc-Extension
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/riopelle" target="_blank">
+            Tell Me About Riopelle
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+    
+    <li><a href="/atlas-of-rwandan-exiles">Atlas of Rwandan Exiles</a></li>
+    
+
+    
+    <li>
+        <a href="rs-atlascine.concordia.ca/la-ville-extraordinaire/" target="_blank">
+            La Ville Extraordinaire
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+</ul>
+			</div>
+			<div class="note1 add-padding">
+				<h1>Browse atlases</h1>
+				<p>
+					<div class="tile-gallery add-padding">
+<p><a href="https://rs-atlascine.concordia.ca/buskers-in-the-city/index.html?module=module.stories" target="_blank"></p>
+<p><div style="background-image: url('/imgs/busker.png');"></p>
+<p><div>
+<h1>Buskers in the City</h1></p>
+<p><p></p></p>
+<p></div>
+</div>
+</a></p>
+<p><a href="https://rs-atlascine.concordia.ca/parcextension" target="_blank"></p>
+<p><div style="background-image: url('https://rs-atlascine.concordia.ca/parcextension/images/IMG_4549.jpeg');"></p>
+<p><div>
+<h1>Intangible Heritage of Parc-Extension</h1></p>
+<p><p>A digital storytelling project about the intangible heritage of Parc-Extension, a neighbourhood in Montreal, Canada.</p></p>
+<p></div>
+</div>
+</a></p>
+<p><a href="https://rs-atlascine.concordia.ca/riopelle" target="_blank"></p>
+<p><div style="background-image: url('https://storytelling.concordia.ca/wp-content/uploads/2022/01/Jean-Paul-Riopelle-at-his-Atelier-Durantin-in-Paris-1952-Photo-John-Craven-1030x699.jpeg');"></p>
+<p><div>
+<h1>Tell Me About Riopelle</h1></p>
+<p><p>As a lead-up to the 100th anniversary of the birth of artist Jean Paul Riopelle in 2023, the Jean Paul Riopelle Foundation and Concordia University have teamed up for an ambitious project: to create a digital oral archive that will deepen our understanding of and share knowledge about the life and career of this world-renowned artist. This project, led by the Centre for Oral History and Digital Storytelling (COHDS), aims to collect stories that contribute to Riopelle’s life story through the voices of those who knew him or encountered him, and to make these stories accessible across multiple channels.</p></p>
+<p></div>
+</div>
+</a></p>
+<p><a href="atlas-of-rwandan-exiles"></p>
+<p><div style="background-image: url('https://rs-atlascine.concordia.ca/rwanda/images/1.jpg');"></p>
+<p><div>
+<h1>Atlas of Rwandan Exiles</h1></p>
+<p><p>The Atlas of Rwandan Life Stories is a digital mapping project that explores the multiple methodological, technological, ethical and cartographic aspects of mapping stories, with a particular focus on life stories.</p></p>
+<p></div>
+</div>
+</a></p>
+<p><a href="rs-atlascine.concordia.ca/la-ville-extraordinaire/" target="_blank"></p>
+<p><div style="background-image: url('https://storytelling.concordia.ca/wp-content/uploads/2020/10/Cynthia-Hammond-Ville-extraordinaire-resized.jpg');"></p>
+<p><div>
+<h1>La Ville Extraordinaire</h1></p>
+<p><p>What can the memories of older Montrealers teach us about how our city has changed over time? How have different communities shaped their neighbourhoods and produced spaces with collective significance? And how might research-creation methods facilitate a public sharing of these memories, stories, and places? Working with oral history and place-based research-creation methods, La Ville Extraordinaire foregrounds the urban knowledge of four diverse groups of older Montrealers. The project will culminate in an exhibition at Mémoire des Montréalais.es, a new museum dedicated to living memory in a multicultural city.</p></p>
+<p></div>
+</div>
+</a></p>
+</div>
+				<p>
+			</div>
+			<!--
+			<div class="note2">
+				<p>
+					
+				<p>
+			</div>
+			-->
+		</div>
+		<footer class='grid-container add-padding'>
+    <div class="centered">
+        <ul>
+    
+    
+    <li><a href="/about">About</a></li>
+    
+
+    
+    <li><a href="/browse-atlases">Browse atlases</a></li>
+    
+
+    
+    <li><a href="/how-it-works">How it works</a></li>
+    
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/demo/" target="_blank">
+            Demo
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+
+    
+    <li><a href="/contact">Contact</a></li>
+    
+
+    
+    <li><a href="/history">History</a></li>
+    
+
+    
+    <li><a href="/publications">Publications</a></li>
+    
+
+</ul>
+<ul>
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/buskers-in-the-city/index.html?module=module.stories" target="_blank">
+            Buskers in the City
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/parcextension" target="_blank">
+            Intangible Heritage of Parc-Extension
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+    
+    <li>
+        <a href="https://rs-atlascine.concordia.ca/riopelle" target="_blank">
+            Tell Me About Riopelle
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+    
+    <li><a href="/atlas-of-rwandan-exiles">Atlas of Rwandan Exiles</a></li>
+    
+
+    
+    <li>
+        <a href="rs-atlascine.concordia.ca/la-ville-extraordinaire/" target="_blank">
+            La Ville Extraordinaire
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </li>
+    
+
+</ul>
+    </div>
+    <div class="brands">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Social_Sciences_and_Humanities_Research_Council_Logo.svg" />
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Canarie_logo.png" />
+        </div>
+        <div>
+            <img src="https://clyderiveratlas.ca/images/gcrc_logo.png" />
+        </div>
+        <div>
+            <img src="https://www.jechoisismontreal.com/app/uploads/2019/04/concordia-logo.png" />
+        </div>
+        <div>
+            <img src="/imgs/new+COHDS+logo+white+on+black.png" />
+        </div>
+        <div>
+            <img src="https://pagerwanda.ca/wp-content/uploads/2019/03/logo_pr.png" />
+        </div>
+        <div>
+            <img src="/imgs/Logo1-cropped4.png" />
+        </div>
+        <div>
+            <p class="centered">Atlascine would not be possible without its funders, the Social Science and Humanities Research Council and CANARIE, as well as Concordia University for its infrastructures, the Geomatics and Cartographic Research Centre (GCRC) at Carleton University for its development assistance, and Atlascine's founding partners, the Centre for Oral History and Digital Storytelling and Page Rwanda.</p>
+        </div>
+    </div>
+</footer>
+	</body>
+
+</html>
