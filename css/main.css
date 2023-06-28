@@ -233,7 +233,7 @@ footer a:hover, .nav-grid-container a:hover {
 .tile-gallery {
 	display: grid;
   	grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
-	grid-gap: 0vw;
+	grid-gap: 1.5vw;
 }
 
 .tile-gallery p {
