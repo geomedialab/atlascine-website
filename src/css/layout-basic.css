@@ -42,8 +42,8 @@
 
 .left-pane li {
 	list-style-type: none;
-	line-height: calc(var(--font-multiplier) * 2.4vh);
-	font-size: calc(var(--font-multiplier) * 1em);
+	line-height: calc(var(--font-multiplier) * 1.8em);
+	font-size: calc(var(--font-multiplier) * 1.1em);
 }
 
 .left-pane li::before {
@@ -90,7 +90,7 @@
 }
 .note1 p {
 	font-size: calc(var(--font-multiplier) * 1.2em);
-	line-height: 3vh;
+	line-height: 1.3em;
 }
 
 .splash-grid-container > .note2 {

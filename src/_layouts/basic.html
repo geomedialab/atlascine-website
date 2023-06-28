@@ -16,13 +16,12 @@
 			{% include 'navbar.html' %}
 
 			<div class="left-pane">
-			{% include 'list-index.html' %}
+			{% include 'list-index-pages.html' %}
 			</div>
 			<div class="note1 add-padding">
 				<h1>{{ title }}</h1>
-				<p>
-					{{ content | main | safe }}
-				<p>
+				{{ content | main | safe }}
+				
 			</div>
 			<!--
 			<div class="note2">

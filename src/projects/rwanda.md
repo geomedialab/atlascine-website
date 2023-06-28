@@ -5,6 +5,7 @@ permalink: "/{{ title | slugify }}/"
 layout: 'basic.html'
 description: 'The Atlas of Rwandan Life Stories is a digital mapping project that explores the multiple methodological, technological, ethical and cartographic aspects of mapping stories, with a particular focus on life stories.'
 img: 'https://rs-atlascine.concordia.ca/rwanda/images/1.jpg'
+date: 2023-06-28
 ---
 
 The Atlas of Rwandan Life Stories (or Atlas of Rwandan Exiles) is a collection of mapped oral histories by Rwandan exiles living in Canada. The project situates itself at the crossroads of two other major research projects: The Montreal Life Stories Project (2008-2012), an oral history project led by Steven High, during which hundreds of life stories of exiles and refugees living in Montreal were collected and archived at Concordia University by the Center for Oral History and Digital Storytelling (COHDS); and The Mapping Life Stories Project, a research project led by Sébastien Caquard dedicated to exploring the multiple methodological, technological, ethical and cartographic aspects of mapping stories, with a particular focus on life stories.
