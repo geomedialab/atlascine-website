@@ -161,7 +161,6 @@ footer > div:nth-child(1) {
 	grid-area: index;
 }
 
-
 footer > div:nth-child(3) {
 	grid-area: outro;
 	padding-left: 7vh;
@@ -170,7 +169,7 @@ footer > div:nth-child(3) {
 footer > div:nth-child(2) {
 	grid-area: brands;
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(33%, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(25%, 1fr) );
 	padding: 7vh;
 }
 
