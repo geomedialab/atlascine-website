@@ -1,6 +1,6 @@
 ---
 layout: 'basic.html'
-tags: navitems
+tags: [navitems, pages]
 permalink: "/{{ title | slugify }}/"
 title: 'About'
 date: 2023-06-11

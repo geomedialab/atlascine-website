@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     */
     function displayDivOnHover(){
       const div = document.querySelector('.tile-gallery');
-      for (let i = 0; i <= div.children.length; i += 1) {
+      for (let i = 0; i < div.children.length; i += 1) {
         div.children[i].addEventListener('mouseover', function() {
           div.children[i].children[0].children[0].style.opacity = .9;
         });
@@ -81,24 +81,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     displayDivOnHover();
 
-    function blurDivOnHover(){
+    function zoomBackgroundOnHover() {
       const div = document.querySelector('.tile-gallery');
-      for (let i = 0; i <= div.children.length; i += 1) {
+      for (let i = 0; i < div.children.length; i += 1) {
         div.children[i].addEventListener('mouseover', function() {
-          div.children[i].children[0].children[0].style.opacity = .9;
+          div.children[i].children[0].style.backgroundSize = '122%';
+          div.children[i].children[0].style.zIndex = '1';
         });
         div.children[i].addEventListener('mouseout', function() {
-          div.children[i].children[0].children[0].style.opacity = 0;
+          div.children[i].children[0].style.backgroundSize = '120%';
+          div.children[i].children[0].style.zIndex = '0';
         });
       }
     }
-    blurDivOnHover();
-
-    // Add mouseover event listener to the image div
-    document.getElementById("imageDiv").addEventListener("mouseover", function() {
-      // Add or remove a CSS class to trigger the hover effect
-      this.classList.toggle("hovered");
-    });
+    zoomBackgroundOnHover();
+    //var container = document.querySelector('.container');
+    //var text = document.querySelector('#truncated-text');
 
 });
 
