@@ -255,17 +255,13 @@ footer a:hover, .nav-grid-container a:hover {
 
 .tile-gallery > a > div > div {
 	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-	padding: 2vw;
+	transition: opacity 0.3s ease-in-out;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	background-color: aliceblue;
-	border-radius: 5px;
-	padding: 2vw;
-	margin: 0 2vw 0vh 2vw;
-	max-height: 60%;
-	top: 4vh;
 	position: relative;
+	height: 100%;
+	padding: 2vw;
 }
 
 /* left pane */
