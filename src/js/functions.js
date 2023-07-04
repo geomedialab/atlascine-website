@@ -85,12 +85,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const div = document.querySelector('.tile-gallery');
       for (let i = 0; i < div.children.length; i += 1) {
         div.children[i].addEventListener('mouseover', function() {
-          div.children[i].children[0].style.backgroundSize = '122%';
-          div.children[i].children[0].style.zIndex = '1';
+          //div.children[i].children[0].style.backgroundSize = '120%';
+          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.1)';
+          //div.children[i].children[0].style.zIndex = '1';
         });
         div.children[i].addEventListener('mouseout', function() {
-          div.children[i].children[0].style.backgroundSize = '120%';
-          div.children[i].children[0].style.zIndex = '0';
+          //div.children[i].children[0].style.backgroundSize = 'cover';
+          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.0)';
+          //div.children[i].children[0].style.zIndex = '0';
         });
       }
     }
