@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (let i = 0; i < div.children.length; i += 1) {
         div.children[i].addEventListener('mouseover', function() {
           //div.children[i].children[0].style.backgroundSize = '120%';
-          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.1)';
+          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.05)';
           //div.children[i].children[0].style.zIndex = '1';
         });
         div.children[i].addEventListener('mouseout', function() {
