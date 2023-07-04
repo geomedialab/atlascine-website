@@ -235,33 +235,43 @@ footer a:hover, .nav-grid-container a:hover {
 	grid-gap: 1.5vw;
 }
 
-.tile-gallery p {
-	font-size: calc(var(--font-multiplier) * 1em);
+.tile-gallery > a {
+	text-decoration: none;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
 }
 
 .tile-gallery > a > div {
 	/*border-radius: 8px;*/
-	background-position: right;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 40vh;
+	transition: all 0.3s ease-in-out;
+	height: 100%;
 	position: relative;
-}
-
-.tile-gallery > a {
-	text-decoration: none;
-	/*padding: 1vh;*/
+	overflow: hidden;
 }
 
 .tile-gallery > a > div > div {
 	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	text-overflow: ellipsis;
+	transition: all 0.3s ease-in-out;
 	overflow: hidden;
 	background-color: aliceblue;
 	position: relative;
 	height: 100%;
-	padding: 2vw;
+	padding: 5vw;
+}
+
+.tile-gallery > a > div > div > p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 50; /* Number of lines to show */
+	-webkit-box-orient: vertical;
+	font-size: calc(var(--font-multiplier) * 1em);
 }
 
 /* left pane */
