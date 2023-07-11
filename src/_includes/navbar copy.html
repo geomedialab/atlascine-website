@@ -1,11 +1,3 @@
-<div class="title vertical-centre">
-    {% if landingpage %}
-        <!--<header>{{ title | safe }}</header>-->
-        <header>Atlascine</header>
-    {% else %}
-        <header><a href="/">Atlascine</a></header>
-    {% endif %}
-</div>
 {% if landingpage %}
     <div class="nav-items">
     {% for p in collections.navitems %}
@@ -21,3 +13,11 @@
 {% else %}
     <!-- render nothing -->
 {% endif %}
+<div class="header">
+    {% if landingpage %}
+        <!--<header>{{ title | safe }}</header>-->
+        <header>Atlascine</header>
+    {% else %}
+        <header><a href="/">Atlascine</a></header>
+    {% endif %}
+</div>

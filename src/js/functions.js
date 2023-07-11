@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const div1 = document.querySelector('.splash-grid-container > div:nth-child(1)');
-    const div2 = document.querySelector('.splash-grid-container > div:nth-child(2)');
-    const div3 = document.querySelector('.splash-grid-container > div:nth-child(3)');
+    /*
+    const div1 = document.querySelector('.grid-container > div:nth-child(1)');
+    const div2 = document.querySelector('.grid-container > div:nth-child(2)');
+    const div3 = document.querySelector('.grid-container > div:nth-child(3)');
     const div3Height = div3.offsetHeight;
     const div1Height = div1.offsetHeight;
     const totalHeight = div1Height + div3Height;
-    div2.style.lineHeight = `${totalHeight}px`;
-
+    div1.style.lineHeight = `${totalHeight}px`;
+    */
     const primaryColors = ["#00abbb", "#5aaa5b", "#bb8c00","#ec5f49","#cf63c4","#6d87ff"];
     const phrases = document.querySelectorAll("#colorize h2 span");
     const circles = document.querySelectorAll("svg circle");
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (let i = 0; i < div.children.length; i += 1) {
         div.children[i].addEventListener('mouseover', function() {
           //div.children[i].children[0].style.backgroundSize = '120%';
-          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.05)';
+          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.025)';
           //div.children[i].children[0].style.zIndex = '1';
         });
         div.children[i].addEventListener('mouseout', function() {
