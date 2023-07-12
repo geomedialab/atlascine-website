@@ -5,11 +5,11 @@ permalink: "/{{ title | slugify }}/"
 title: 'How it works'
 date: 2023-06-12
 ---
-
+<!--
 <div style="height:60vh">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7pT80nzfJ9E?start=1548" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe credentialless width="100%" height="100%" src="https://www.youtube.com/embed/7pT80nzfJ9E?start=1548" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
+-->
 There are three major ways of engaging with Atlascine: (1) as an atlas user to learn about a particular story or topic; (2) as a content creator to contribute to an existing map or atlas; (3) or as an atlas manager to set up and manage an entire Atlascine atlas.
 
 ## Atlas users
@@ -31,8 +31,9 @@ Finally, the **atlas manager** oversees the deployment and maintenance of an Atl
 For more details please look at the documentation provided on [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki).
 
 ---
-
+<!--
 This 10 min. video explains the basic functionalities of Atlascine
 <div style="height:60vh">
-<iframe src="https://player.vimeo.com/video/599132384?h=fad3d027b1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe id="video" src="https://player.vimeo.com/video/599132384?h=fad3d027b1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
+-->
