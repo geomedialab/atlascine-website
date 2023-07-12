@@ -1,25 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const div1 = document.querySelector('.splash-grid-container > div:nth-child(1)');
-    const div2 = document.querySelector('.splash-grid-container > div:nth-child(2)');
-    const div3 = document.querySelector('.splash-grid-container > div:nth-child(3)');
+    /*
+    const div1 = document.querySelector('.grid-container > div:nth-child(1)');
+    const div2 = document.querySelector('.grid-container > div:nth-child(2)');
+    const div3 = document.querySelector('.grid-container > div:nth-child(3)');
     const div3Height = div3.offsetHeight;
     const div1Height = div1.offsetHeight;
     const totalHeight = div1Height + div3Height;
-    div2.style.lineHeight = `${totalHeight}px`;
-
+    div1.style.lineHeight = `${totalHeight}px`;
+    */
+   /*
     const primaryColors = ["#00abbb", "#5aaa5b", "#bb8c00","#ec5f49","#cf63c4","#6d87ff"];
-    const phrases = document.querySelectorAll("#colorize h2 span");
+    const phrases = document.querySelectorAll("#colorize span");
     const circles = document.querySelectorAll("svg circle");
+    const randomColors = [];
 
     phrases.forEach((phrase) => {
         const randomColor = primaryColors[Math.floor(Math.random() * primaryColors.length)];
-        phrase.style.color = randomColor;
+        phrase.style.backgroundColor = randomColor;
+        phrase.style.cursor = 'default';
+        randomColors.push(randomColor);
+        phrase.addEventListener("mouseover", function() {
+            phrase.style.backgroundColor = "#fff";
+        });
+        phrase.addEventListener("mouseout", function() {
+            phrase.style.backgroundColor = randomColor;
+        });
     });
-
     circles.forEach((circle) => {
-        const randomColor = primaryColors[Math.floor(Math.random() * primaryColors.length)];
+        const randomColor = randomColors[Math.floor(Math.random() * randomColors.length)];
         circle.setAttribute("fill", randomColor);
     });
+*/
     /*
     function scrollGallerySlowly() {
         const gallery = document.querySelector('.gallery');
@@ -68,6 +79,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hideSecondChildren(document.querySelector('.gallery'));
     */
+
+    
+    const open = document.getElementById('open');
+    const close = document.getElementById('close');
+    navitems = document.querySelectorAll('.nav-items > a');
+
+    open.addEventListener('click', function() {
+        navitems.forEach((navitem) => {
+            navitem.style.display = '';
+            navitem.style.opacity = '1';
+        });
+        open.style.display = 'none';
+        close.style.display = 'flex';
+    });
+
+    close.addEventListener('click', function() {
+      navitems.forEach((navitem) => {
+          navitem.style.display = 'none';
+          navitem.style.opacity = '0';
+      });
+      open.style.display = 'flex';
+      close.style.display = 'none';
+  });
+
+
     function displayDivOnHover(){
       const div = document.querySelector('.tile-gallery');
       for (let i = 0; i < div.children.length; i += 1) {
@@ -86,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (let i = 0; i < div.children.length; i += 1) {
         div.children[i].addEventListener('mouseover', function() {
           //div.children[i].children[0].style.backgroundSize = '120%';
-          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.05)';
+          div.children[i].querySelector('div:first-child').style.transform = 'scale(1.025)';
           //div.children[i].children[0].style.zIndex = '1';
         });
         div.children[i].addEventListener('mouseout', function() {

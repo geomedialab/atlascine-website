@@ -36,33 +36,6 @@
 	align-items: center
 }
 
-.splash-grid-container > .left-pane {
-	grid-area: left-pane;	
-}
-
-.left-pane li {
-	list-style-type: none;
-	line-height: calc(var(--font-multiplier) * 1.8em);
-	font-size: calc(var(--font-multiplier) * 1.1em);
-}
-
-.left-pane li::before {
-    content: none;
-    margin-right: 0.5em;
-}
-
-.left-pane li > a {
-	text-decoration: none;
-	color: var(--button-color);
-}
-
-.left-pane li > a:hover {
-	color: var(--hover-color);
-	background-color: var(--tag-color);
-}
-.left-pane > h2 {
-	padding: 2vh 0 2vh 0;
-}
 
 .splash-grid-container > .nav-items > a {
 	padding: 0vh 0vw 0vh 0vw;
