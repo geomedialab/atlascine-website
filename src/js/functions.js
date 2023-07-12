@@ -1,6 +1,4 @@
-console.log('JS loaded');
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed');
+
   /*
   const videoElement = document.getElementById('video');
   videoElement.addEventListener('error', function(event) {
@@ -92,63 +90,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   hideSecondChildren(document.querySelector('.gallery'));
   */
-
-    
-  const open = document.getElementById('open');
-  const close = document.getElementById('close');
-  navitems = document.querySelectorAll('.nav-items > a');
-
-  open.addEventListener('click', function() {
-      navitems.forEach((navitem) => {
-          navitem.style.display = '';
-          navitem.style.opacity = '1';
-      });
-      open.style.display = 'none';
-      close.style.display = 'flex';
-  });
-
-  close.addEventListener('click', function() {
-    navitems.forEach((navitem) => {
-        navitem.style.display = 'none';
-        navitem.style.opacity = '0';
-    });
-    open.style.display = 'flex';
-    close.style.display = 'none';
-  });
-
-
-  function displayDivOnHover(){
-    const div = document.querySelector('.tile-gallery');
-    for (let i = 0; i < div.children.length; i += 1) {
-      div.children[i].addEventListener('mouseover', function() {
-        div.children[i].children[0].children[0].style.opacity = .9;
-      });
-      div.children[i].addEventListener('mouseout', function() {
-        div.children[i].children[0].children[0].style.opacity = 0;
-      });
-    }
-  }
-  displayDivOnHover();
-
-  function zoomBackgroundOnHover() {
-    const div = document.querySelector('.tile-gallery');
-    for (let i = 0; i < div.children.length; i += 1) {
-      div.children[i].addEventListener('mouseover', function() {
-        //div.children[i].children[0].style.backgroundSize = '120%';
-        div.children[i].querySelector('div:first-child').style.transform = 'scale(1.025)';
-        //div.children[i].children[0].style.zIndex = '1';
-      });
-      div.children[i].addEventListener('mouseout', function() {
-        //div.children[i].children[0].style.backgroundSize = 'cover';
-        div.children[i].querySelector('div:first-child').style.transform = 'scale(1.0)';
-        //div.children[i].children[0].style.zIndex = '0';
-      });
-    }
-  }
-  zoomBackgroundOnHover();
-  //var container = document.querySelector('.container');
-  //var text = document.querySelector('#truncated-text');
-
-});
 
   
