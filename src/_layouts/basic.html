@@ -6,19 +6,18 @@
 		<link rel="shortcut icon" href="/imgs/atlascine-logo.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="/css/variables.css" />
 		<link rel="stylesheet" type="text/css" href="/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="/css/layout-basic.css" />
+		<link rel="stylesheet" type="text/css" href="/css/layout-landing.css" />
 		<!--<script src="https://d3js.org/d3.v7.min.js"></script>-->
 		<script async type="text/javascript" src="/js/functions.js" defer></script>
 	</head>
 	<body>
-		<div class='splash-grid-container grid-container add-padding'>
+		<div class='grid-container'>
 			{% set basicpage = true %}
 			{% include 'navbar.html' %}
-
-			<div class="left-pane">
-			{% include 'list-index-pages.html' %}
+			<div class="left-pane vertical-centre">
+				<!--{% include 'list-index-pages.html' %}-->
 			</div>
-			<div class="note1 add-padding">
+			<div class="content">
 				<h1>{{ title }}</h1>
 				{{ content | main | safe }}
 				

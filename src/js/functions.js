@@ -8,19 +8,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalHeight = div1Height + div3Height;
     div1.style.lineHeight = `${totalHeight}px`;
     */
+   /*
     const primaryColors = ["#00abbb", "#5aaa5b", "#bb8c00","#ec5f49","#cf63c4","#6d87ff"];
-    const phrases = document.querySelectorAll("#colorize h2 span");
+    const phrases = document.querySelectorAll("#colorize span");
     const circles = document.querySelectorAll("svg circle");
+    const randomColors = [];
 
     phrases.forEach((phrase) => {
         const randomColor = primaryColors[Math.floor(Math.random() * primaryColors.length)];
-        phrase.style.color = randomColor;
+        phrase.style.backgroundColor = randomColor;
+        phrase.style.cursor = 'default';
+        randomColors.push(randomColor);
+        phrase.addEventListener("mouseover", function() {
+            phrase.style.backgroundColor = "#fff";
+        });
+        phrase.addEventListener("mouseout", function() {
+            phrase.style.backgroundColor = randomColor;
+        });
     });
-
     circles.forEach((circle) => {
-        const randomColor = primaryColors[Math.floor(Math.random() * primaryColors.length)];
+        const randomColor = randomColors[Math.floor(Math.random() * randomColors.length)];
         circle.setAttribute("fill", randomColor);
     });
+*/
     /*
     function scrollGallerySlowly() {
         const gallery = document.querySelector('.gallery');
@@ -69,6 +79,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hideSecondChildren(document.querySelector('.gallery'));
     */
+
+    
+    const open = document.getElementById('open');
+    const close = document.getElementById('close');
+    navitems = document.querySelectorAll('.nav-items > a');
+
+    open.addEventListener('click', function() {
+        navitems.forEach((navitem) => {
+            navitem.style.display = '';
+            navitem.style.opacity = '1';
+        });
+        open.style.display = 'none';
+        close.style.display = 'flex';
+    });
+
+    close.addEventListener('click', function() {
+      navitems.forEach((navitem) => {
+          navitem.style.display = 'none';
+          navitem.style.opacity = '0';
+      });
+      open.style.display = 'flex';
+      close.style.display = 'none';
+  });
+
+
     function displayDivOnHover(){
       const div = document.querySelector('.tile-gallery');
       for (let i = 0; i < div.children.length; i += 1) {

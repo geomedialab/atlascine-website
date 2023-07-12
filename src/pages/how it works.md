@@ -3,7 +3,7 @@ layout: 'basic.html'
 tags: [navitems, pages]
 permalink: "/{{ title | slugify }}/"
 title: 'How it works'
-date: 2023-06-11
+date: 2023-06-12
 ---
 
 <div style="height:60vh">
