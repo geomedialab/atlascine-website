@@ -3,7 +3,7 @@ layout: 'basic.html'
 tags: 'pages'
 permalink: "/{{ title | slugify }}/"
 title: 'Publications'
-date: 2023-06-15
+date: 2023-06-11
 ---
 
 ## List of publications mentioning Atlascine:
