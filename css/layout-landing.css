@@ -81,6 +81,10 @@ hr {
 	background-image: linear-gradient(to right,  var(--main-bg-color), var(--main-text-color), var(--main-bg-color));
 }
 
+img {
+	max-width: 100%;
+}
+
 /* body */
 
 .grid-container {
