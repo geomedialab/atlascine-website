@@ -2,7 +2,7 @@ console.log('JS loaded');
   
 const open = document.getElementById('open');
 const close = document.getElementById('close');
-navitems = document.querySelectorAll('.nav-items > a');
+navitems = document.querySelectorAll('.nav-item');
 
 open.addEventListener('click', function() {
     navitems.forEach((navitem) => {
