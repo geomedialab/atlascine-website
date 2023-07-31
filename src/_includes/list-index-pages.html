@@ -1,5 +1,6 @@
 <ul>
-{% for p in collections.pages %}
+{% for p in collections[lang] %}
+{% if p.data.tags and p.data.tags.includes('pages') %}
     {% if p.data.redirect %}
     <li>
         <a href="{{ p.data.redirect }}" target="_blank">
@@ -10,7 +11,8 @@
         </a>
     </li>
     {% else %}
-    <li><a href="/{{ p.data.title | slugify }}">{{ p.data.title | safe }}</a></li>
+    <li><a href="/{{ lang }}/{{ p.data.title | slugify }}/">{{ p.data.title | safe }}</a></li>
     {% endif %}
+{% endif %}
 {% endfor %}
 </ul>

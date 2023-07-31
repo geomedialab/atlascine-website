@@ -1,7 +1,6 @@
 ---
 layout: 'basic.html'
 tags: [navitems, pages]
-permalink: "/{{ title | slugify }}/"
 title: 'How it works'
 date: 2023-06-12
 ---

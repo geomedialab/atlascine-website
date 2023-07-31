@@ -2,6 +2,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/imgs/");//add folders to _site
   eleventyConfig.addPassthroughCopy("src/js/");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addGlobalData("langs", ['en', 'fr']);
+  eleventyConfig.addCollection("en", function (collection) {
+    return collection.getFilteredByGlob("./src/en/**/*.+(md|njk)");
+  });
+  eleventyConfig.addCollection("fr", function (collection) {
+    return collection.getFilteredByGlob("./src/fr/**/*.+(md|njk)");
+  });
   eleventyConfig.addFilter('main', (content) => {
     const separator = '<!--section-->';
     const parts = content.split(separator);

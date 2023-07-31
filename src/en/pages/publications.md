@@ -1,7 +1,6 @@
 ---
 layout: 'basic.html'
-tags: 'pages'
-permalink: "/{{ title | slugify }}/"
+tags: ['pages', 'navitems']
 title: 'Publications'
 date: 2023-06-11
 ---

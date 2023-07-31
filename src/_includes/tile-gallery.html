@@ -1,11 +1,12 @@
 <script async type="text/javascript" src="/js/tile-gallery.js" defer></script>
 
 <div class="tile-gallery">
-{% for p in collections.projects %}
+{% for p in collections[lang] %}
+{% if p.data.tags and p.data.tags.includes('projects') %}
     {% if p.data.redirect %}
     <a href="{{ p.data.redirect }}" target="_blank">
     {% else %}
-    <a href="{{ p.data.title | slugify }}">
+    <a href="/{{ lang }}/{{ p.data.title | slugify }}/">
     {% endif %}
         {% if p.data.img %}
         <div class="zoom-in" style="background-image: url('{{ p.data.img }}');">
@@ -22,5 +23,6 @@
             </div>
         </div>
     </a>
+{% endif %}
 {% endfor %}
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: 'basic.html'
 tags: [navitems, pages]
-permalink: "/{{ title | slugify }}/"
+translationKey: "about"
 title: 'About'
 date: 2023-06-14
 ---
