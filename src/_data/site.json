@@ -1,0 +1,16 @@
+{
+  "title": "Atlascine",
+  "description": "Atlascine is an online tool for mapping stories",
+  "url": "https://atlascine.org",
+  "baseUrl": "/",
+  "languages": [
+    {
+      "label": "english",
+      "code": "en"
+    },
+    {
+      "label": "français",
+      "code": "fr"
+    }
+  ]
+}

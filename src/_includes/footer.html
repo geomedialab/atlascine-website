@@ -3,11 +3,7 @@
         {% include 'list-index-pages.html' %}
         <ul>
             <li>
-                {% if lang == 'en' %}
-                <a href="/fr/">fr</a>
-                {% else %}
-                <a href="/">en</a>
-                {% endif %}
+                {% include 'lang-switcher.html' %}
             </li>
         </ul>
     </div>

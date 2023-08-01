@@ -1,0 +1,20 @@
+<div class="lang-selector">
+    {% for l in site.languages %}
+        {% if l.code == lang or not translationKey is defined %}
+            <a>{{ l.code }}</a>
+        {% elif translationKey is defined %}
+            {% if translationKey == 'index' %}
+                <a href="/{{ l.code }}/">{{ l.code }}</a>
+            {% else %}
+                {% for p in collections[l.code] %}
+                    {% if p.data.translationKey == translationKey %}
+                        <a href="/{{ l.code }}/{{ p.data.title | slugify }}/">{{ l.code }}</a>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+        {% if loop.index < loop.length %}
+            <a>|</a>
+        {% endif %}
+    {% endfor %}
+</div>

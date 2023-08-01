@@ -1,6 +1,7 @@
 ---
 layout: 'landing.html'
-title: 'Atlascine'
+title: 'Accueil'
+translationKey: 'index'
 permalink: /fr/
 ---
 
