@@ -2,7 +2,7 @@ console.log('JS loaded');
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM loaded');
-  
+
     const open = document.getElementById('open');
     const close = document.getElementById('close');
     navitems = document.querySelectorAll('.nav-item');

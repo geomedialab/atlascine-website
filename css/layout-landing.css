@@ -272,11 +272,20 @@ header a {
 .nav-items > div {
 	grid-area: span 1 / span 1;
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	justify-content: center;
 	align-items: center;
 	height: 4vh;
-	padding: 2vh 0 2vh 0;
+	/*padding: 2vh 0 2vh 0;*/
+	text-align: center;
+	text-decoration: none;
+	font-family: var(--main-font);
+	color: var(--button-color);
+	font-size: calc(var(--font-multiplier) * 1.4em);
+	line-height: 8vh;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .nav-items svg {
@@ -285,22 +294,24 @@ header a {
 }
 
 #open {
-	/**/
+	flex-direction: column;
 }
 
 #close {
 	display: none;
+	flex-direction: column;
 }
 
 .nav-items > a {
+	font-size: calc(var(--font-multiplier) * 1.4em);
+	color: var(--button-color);
+}
+
+.nav-items > a, .lang-selector a[href] {
 	grid-area: span 1 / span 1;
-	padding: 0vh 0vw 0vh 0vw;
-	background-color: var(--path-color);
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--main-font);
-	color: var(--button-color);
-	font-size: calc(var(--font-multiplier) * 1.4em);
 	line-height: 8vh;
 	overflow-x: hidden;
 	white-space: nowrap;
@@ -309,9 +320,21 @@ header a {
 	direction: ltr;
 }
 
-.nav-items > a:hover, footer a:hover {
+.lang-selector {
+	height: 4vh;
+}
+
+.lang-selector a {
+	padding: .4vh .4vw .4vh .4vw;
+}
+
+.nav-items > a[href]:hover, footer a[href]:hover, .lang-selector a[href]:hover {
     background-color: var(--hover-bg-color);
 	color:  var(--hover-color);
+}
+
+.nav-item svg {
+	margin-bottom: -3%;
 }
 
 .inline-grid {
@@ -339,10 +362,14 @@ footer {
 }
 
 footer ul {
-	list-style: none;
 	margin: 0;
-	padding: 0 0 2vh 0;
+	padding: 0 0 0 0;
 }
+
+footer ul svg {
+	margin-bottom: -1%;
+}
+
 footer li::before {
     content: none;
     margin-right: 0.5em;
