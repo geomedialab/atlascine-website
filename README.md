@@ -10,7 +10,23 @@ Contains files required to build the Atlascine website located at atlascine.org.
 
 ## to create a new page
 
-- Note the following:
-  - regular pages (src/[lang]/pages/*.md) appear in the footer links list
-  - project pages (src/[lang]/pages/*.md) appear inside the browse-atlases page
+- Locate where you want to create a new webpage (if in English, navigate to /src/en/, French, /src/fr/).
+- Hit *Add file* > *Create new file*
+- Give it a name with *.md* as its file extension
+- Your page will require frontmatter to be added to the site properly. Frontmatter should be added at the top of the page and looks like this:
+  ```
+  ---
+  layout: 'basic.html'
+  tags: [navitems, indexPages]
+  translationKey: "about"
+  title: 'About'
+  date: 2023-06-14
+  ---
+  ```
+   - Copy the above frontmatter to the beginning of your new page and modify the following values to your needs:
+     - **tags**: if you would like your new page to appear in the navigation menu at the top of the website, include the *navitems* tag; if you would like it to appear in the list of footer links, include the *indexPages* tag; if you would like the page to appear in the gallery on the browse-atlases page, include the *projects* tag. If you are including more than one tag, make sure to surround them with square brackets as seen above.
+     - The **translationKey** is used to point two map two translations to each other. For example, the /about page uses the *about* translationKey, as does the /à-propos page. Using the same translationKey makes these pages related to eachother and allows the language buttons to work.
+     - **title** will render as a header at the top of your page by default. It will also be used to generate the url of the page (ex. *À Propos* will turn into the slug */à-propos*).
+     - **date** is optional and can be used to modify the order in which pages appear in either the navigation menu or the pages index.
+- Once you have added the frontmatter, you can also [add some content](#to-edit-content).
   
