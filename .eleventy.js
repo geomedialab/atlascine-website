@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/imgs/");//add folders to public
   eleventyConfig.addPassthroughCopy("src/js/");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy({ "en/index.md": "/index.md" });
   //eleventyConfig.addGlobalData("langs", ['en', 'fr']);
   eleventyConfig.addCollection("en", function (collection) {
     return collection.getFilteredByGlob("./src/en/**/*.+(md|njk)");

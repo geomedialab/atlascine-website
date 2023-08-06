@@ -8,17 +8,7 @@ date: 2023-06-14
 
 The main aim of Atlascine is to streamline the process of transforming audiovisual material into a digital map and to enable a direct interface between audiovisual material, text and the map. With the latest version of the platform, researchers in many disciplines can use the map not only as a way to visually synthesize large volumes of annotated stories and to identify new patterns and structures in these stories, but also to navigate within the stories themselves and find specific events that link stories and places.
 
-Atlascine’s development has been driven by three main principles: (1) the map should not replace the story but accompany it; (2) the mapping process should be as transparent as possible; and (3) the map and the story are to be made fully interconnected in order to expand our ability to navigate within and between stories, their maps and their places.
-
-# History
-
-Since its very first version in 2009, the development of Atlascine has been driven by a clear research goal: to translate emerging cartographic principles and concepts into tangible mapping tools and practices. While the original idea was to develop new forms of spatial expressions inspired by cinematographic techniques to address issues raised by critical cartographers (such as the constructed and subjective dimensions of maps), the latest version of this free and open source platform – known internally as Atlascine v4 – has been driven by the influence of contemporary cartographic theories, recent mapping technologies and ethics and practices from Oral history.
-
-The following video tells the story of Atlascine. Documentation on previous versions of Atlascine can be found by visiting our old [Wordpress page](https://atlascineproject.wordpress.com/).
-
-<div style="height:500px">
-<iframe src="https://liveconcordia.sharepoint.com/teams/COHDSALLLABWEEKLYMEETING/_layouts/15/embed.aspx?UniqueId=12dee274-fcb4-44e1-9523-eddf511d60a7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen title="Life_Story_of_Atlascine.mp4"></iframe>
-</div>
+Atlascine’s development has been driven by three main principles: (1) the map should not replace the story but accompany it; (2) the mapping process should be as transparent as possible; and (3) the map and the story are to be made fully interconnected in order to expand our ability to navigate within and between stories, their maps and their places. To read more on the history of Atlascine, please visit our [History](/en/history) page.
 
 # Aknowledgements
 

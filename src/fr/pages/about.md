@@ -8,17 +8,7 @@ date: 2023-06-14
 
 Le principal objectif d'Atlascine est de rationaliser le processus de transformation du matériel audiovisuel en une carte numérique et de permettre une interface directe entre le matériel audiovisuel, le texte et la carte. Avec la dernière version de la plateforme, les chercheurs de nombreuses disciplines peuvent utiliser la carte non seulement comme moyen de synthétiser visuellement de grands volumes d'histoires annotées et d'identifier de nouveaux schémas et structures dans ces histoires, mais aussi pour naviguer à l'intérieur des histoires elles-mêmes et trouver des événements spécifiques liant les histoires et les lieux.
 
-Le développement d'Atlascine a été guidé par trois principes principaux : (1) la carte ne doit pas remplacer l'histoire mais l'accompagner ; (2) le processus de cartographie doit être aussi transparent que possible ; et (3) la carte et l'histoire doivent être entièrement interconnectées afin d'élargir notre capacité à naviguer au sein des histoires, de leurs cartes et de leurs lieux.
-
-# Histoire
-
-Depuis sa toute première version en 2009, le développement d'Atlascine a été guidé par un objectif de recherche clair : traduire les principes et concepts cartographiques émergents en outils et pratiques de cartographie tangibles. Alors que l'idée originale était de développer de nouvelles formes d'expressions spatiales inspirées des techniques cinématographiques pour traiter des problématiques soulevées par les cartographes critiques (telles que les dimensions construites et subjectives des cartes), la dernière version de cette plateforme libre et open source - connue en interne sous le nom d'Atlascine v4 - a été influencée par les théories cartographiques contemporaines, les technologies de cartographie récentes, ainsi que par l'éthique et les pratiques de l'histoire orale.
-
-La vidéo suivante raconte l'histoire d'Atlascine. La documentation sur les versions précédentes d'Atlascine est disponible en visitant notre ancienne [page Wordpress](https://atlascineproject.wordpress.com/).
-
-<div style="height:500px">
-<iframe src="https://liveconcordia.sharepoint.com/teams/COHDSALLLABWEEKLYMEETING/_layouts/15/embed.aspx?UniqueId=12dee274-fcb4-44e1-9523-eddf511d60a7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen title="Life_Story_of_Atlascine.mp4"></iframe>
-</div>
+Le développement d'Atlascine a été guidé par trois principes principaux : (1) la carte ne doit pas remplacer l'histoire mais l'accompagner ; (2) le processus de cartographie doit être aussi transparent que possible ; et (3) la carte et l'histoire doivent être entièrement interconnectées afin d'élargir notre capacité à naviguer au sein des histoires, de leurs cartes et de leurs lieux. Pour lire plus sur l'histoire d'Atlascine, veuillez visiter notre page [Histoire](/fr/histoire/).
 
 # Remerciements
 

@@ -6,11 +6,16 @@
             {% if translationKey == 'index' %}
                 <a href="/{{ l.code }}/">{{ l.code }}</a>
             {% else %}
+                {% set translationSucceeded = false %}
                 {% for p in collections[l.code] %}
                     {% if p.data.translationKey == translationKey %}
                         <a href="/{{ l.code }}/{{ p.data.title | slugify }}/">{{ l.code }}</a>
+                        {% set translationSucceeded = true %}
                     {% endif %}
                 {% endfor %}
+                {% if not translationSucceeded %}
+                    <a>{{ l.code }}</a>
+                {% endif %}
             {% endif %}
         {% endif %}
         {% if loop.index < loop.length %}
