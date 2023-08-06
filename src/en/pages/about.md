@@ -1,6 +1,6 @@
 ---
 layout: 'basic.html'
-tags: [navitems, pages]
+tags: [navitems, indexPages]
 translationKey: "about"
 title: 'About'
 date: 2023-06-14

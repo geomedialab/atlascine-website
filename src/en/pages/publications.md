@@ -1,6 +1,6 @@
 ---
 layout: 'basic.html'
-tags: ['pages', 'navitems']
+tags: [navitems, indexPages]
 title: 'Publications'
 date: 2023-06-11
 ---
