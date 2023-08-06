@@ -1,5 +1,5 @@
 ---
-tags: [navitems, indexPages]
+tags: [nav-items, index-pages]
 title: 'Demo'
 permalink: false
 redirect: 'https://rs-atlascine.concordia.ca/index.html?module=module.stories'

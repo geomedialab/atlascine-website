@@ -1,6 +1,6 @@
 <ul>
 {% for p in collections[lang] %}
-{% if p.data.tags and p.data.tags.includes('indexPages') %}
+{% if p.data.tags and p.data.tags.includes('index-pages') %}
     {% if p.data.redirect %}
     <li>
         <a href="{{ p.data.redirect }}" target="_blank">

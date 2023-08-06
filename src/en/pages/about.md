@@ -1,6 +1,6 @@
 ---
 layout: 'basic.html'
-tags: [navitems, indexPages]
+tags: [nav-items, index-pages]
 translationKey: "about"
 title: 'About'
 date: 2023-06-14

@@ -1,6 +1,6 @@
 ---
 layout: 'basic.html'
-tags: [navitems, indexPages]
+tags: [nav-items, index-pages]
 title: 'How it works'
 date: 2023-06-12
 ---
