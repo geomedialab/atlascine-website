@@ -35,7 +35,8 @@ h4 {
 p {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1.4em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
+	line-height: calc(var(--font-multiplier) * 1.3em);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -233,7 +234,7 @@ img {
 }
 
 header img {
-	width: 24rem;
+	width: 20rem;
 }
 
 header {
@@ -254,7 +255,7 @@ header a {
 /* nav-items */
 
 .nav-items {
-	grid-area: span 1 / span 3;
+	grid-area: span 1 / span 4;
 	display: inline-grid;
 	grid-template-columns: repeat( 5, 1fr );
 	/*grid-auto-rows: auto;*/
@@ -276,14 +277,13 @@ header a {
 	/*flex-direction: column;*/
 	justify-content: center;
 	align-items: center;
-	height: 4vh;
-	/*padding: 2vh 0 2vh 0;*/
+	height: 3vh;
+	padding: 2vh 0 2vh 0;
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--main-font);
 	color: var(--button-color);
-	font-size: calc(var(--font-multiplier) * 1.4em);
-	line-height: 8vh;
+	font-size: calc(var(--font-multiplier) * 1.2em);
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -311,7 +311,7 @@ header a {
 }
 
 .nav-items > a {
-	font-size: calc(var(--font-multiplier) * 1.4em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
 	color: var(--button-color);
 }
 
@@ -320,7 +320,7 @@ header a {
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--main-font);
-	line-height: 8vh;
+	line-height: 7vh;
 	overflow-x: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -376,6 +376,11 @@ footer {
 footer ul {
 	margin: 0;
 	padding: 0 0 0 0;
+}
+
+footer .lang-selector {
+	margin: 0;
+	padding: 0 0 2vh 0;
 }
 
 footer ul svg {
