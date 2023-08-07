@@ -444,7 +444,7 @@ footer > .brands {
 .tile-gallery > a {
 	grid-area: span 1 / span 1;
 	text-decoration: none;
-	height: 40vh;
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
