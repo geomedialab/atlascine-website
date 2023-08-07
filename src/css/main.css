@@ -255,7 +255,7 @@ header a {
 /* nav-items */
 
 .nav-items {
-	grid-area: span 1 / span 3;
+	grid-area: span 1 / span 4;
 	display: inline-grid;
 	grid-template-columns: repeat( 5, 1fr );
 	/*grid-auto-rows: auto;*/
@@ -278,13 +278,12 @@ header a {
 	justify-content: center;
 	align-items: center;
 	height: 3vh;
-	/*padding: 2vh 0 2vh 0;*/
+	padding: 2vh 0 2vh 0;
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--main-font);
 	color: var(--button-color);
 	font-size: calc(var(--font-multiplier) * 1.2em);
-	line-height: 8vh;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -321,7 +320,7 @@ header a {
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--main-font);
-	line-height: 8vh;
+	line-height: 7vh;
 	overflow-x: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -377,6 +376,11 @@ footer {
 footer ul {
 	margin: 0;
 	padding: 0 0 0 0;
+}
+
+footer .lang-selector {
+	margin: 0;
+	padding: 0 0 2vh 0;
 }
 
 footer ul svg {
