@@ -35,7 +35,8 @@ h4 {
 p {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1.4em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
+	line-height: calc(var(--font-multiplier) * 1.3em);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -233,7 +234,7 @@ img {
 }
 
 header img {
-	width: 24rem;
+	width: 20rem;
 }
 
 header {
@@ -276,13 +277,13 @@ header a {
 	/*flex-direction: column;*/
 	justify-content: center;
 	align-items: center;
-	height: 4vh;
+	height: 3vh;
 	/*padding: 2vh 0 2vh 0;*/
 	text-align: center;
 	text-decoration: none;
 	font-family: var(--main-font);
 	color: var(--button-color);
-	font-size: calc(var(--font-multiplier) * 1.4em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
 	line-height: 8vh;
 	overflow: hidden;
 	white-space: nowrap;
@@ -311,7 +312,7 @@ header a {
 }
 
 .nav-items > a {
-	font-size: calc(var(--font-multiplier) * 1.4em);
+	font-size: calc(var(--font-multiplier) * 1.2em);
 	color: var(--button-color);
 }
 
