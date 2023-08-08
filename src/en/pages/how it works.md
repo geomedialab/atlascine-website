@@ -13,10 +13,12 @@ There are three major ways of engaging with Atlascine: (1) as an atlas user to l
 
 The **atlas user** can be anyone interested in exploring, listening, analyzing and presenting the content of an existing atlas. For instance, individuals who might be interested in learning more about how Rwandan people experienced the 1994 genocide of the Tutsis of Rwanda or in using this atlas for educational purpose (e.g. to teach about this genocide). Atlas users can visualize, listen to and explore each individual story in the *Stories* module, but they can also explore how different stories overlap spatially and thematically by using the *Themes* module.
 
-Atlas users can visualize, listen and explore each individual story: 
+Atlas users can visualize, listen and explore each individual story:
+
 <img src="/imgs/Slide3.jpg" alt="Infographic on Atlascine and how to use it, by Sebastien Caquard"></img>
 
-But they can also explore how different stories overlap spatially and thematically: 
+But they can also explore how different stories overlap spatially and thematically:
+
 <img src="/imgs/Slide4.jpg" alt="Infographic on Atlascine and how to use it, by Sebastien Caquard"></img>
 
 The **content creator** is an advanced user who can modify the content of an existing atlas. For instance, an atlas contributor could add new stories to an existing atlas, add tags to existing stories, add new media and change the legend. 

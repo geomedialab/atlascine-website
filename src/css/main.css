@@ -7,7 +7,6 @@ h1 {
 	color: var(--nav-title-color);
 	font-size: calc(var(--font-multiplier) * 2em);
 	font-weight: bold;
-	margin: 3vh 0px 3vh 0px;
 	text-decoration: none;
 }
 
@@ -17,6 +16,14 @@ h2 {
 	font-weight: bold;
 	font-style: italic;
 	padding:0px 0px 0px 0px;
+}
+
+.content h2::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: var(--main-text-color);
 }
 
 h3 {
@@ -35,11 +42,13 @@ h4 {
 p {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1.2em);
-	line-height: calc(var(--font-multiplier) * 1.3em);
+	font-size: calc(var(--font-multiplier) * 1.2rem);
+	line-height: calc(var(--font-multiplier) * 1.5rem);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
+	margin: 0 0 0 0;
 }
+
 a {
 	color: var(--link-color);
 }
@@ -84,6 +93,29 @@ hr {
 
 img {
 	max-width: 100%;
+	margin: 0 auto;
+}
+
+.content p + img,
+.content h1 + img,
+.content h2 + img,
+.content h3 + img {
+	padding: 0 0 5vh 0;
+}
+
+.content img + p {
+	grid-area: span 1 / span 1;
+	padding: 0 0 5vh 0;
+}
+
+.video {
+	width: 100%;
+	height: 60vh;
+	grid-area: span 1 / span 2;
+}
+
+.content .video + p {
+	grid-area: span 1 / span 2;
 }
 
 /* body */
@@ -219,12 +251,35 @@ img {
 .content {
 	grid-area: span 2 / span 4;
 	scroll-behavior: smooth;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25vw, max-content));
+	grid-row-gap: 5vh;
+	column-gap: 3vw;
 }
 
-.splash-grid-container > div:nth-child(6) {
-	grid-area: media;
+.content h1,
+.content h2,
+.content h3 {
+	grid-area: span 1 / span 2;
+	text-align: center;
+	padding: 0 0 4vh 0;
 }
 
+.content h1 + p,
+.content h2 + p,
+.content h3 + p {
+	grid-area: span 1 / span 2;
+}
+
+.content p + p {
+	grid-area: span 1 / span 2;
+}
+
+.content p + h1,
+.content p + h2,
+.content p + h3 {
+	margin: 10vh 0 0 0;
+}
 
 /* header */
 
@@ -409,6 +464,7 @@ footer h2 {
 
 footer p {
 	font-size: calc(var(--font-multiplier) * 0.6em);
+	line-height: calc(var(--font-multiplier) * .75rem);
 	filter: invert(.6);
 	padding:0px 0px 0px 0px;
 }
@@ -439,6 +495,7 @@ footer > .brands {
 	display: grid;
   	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 1.5vw;
+	grid-area: span 1 / span 2;
 }
 
 .tile-gallery > a {
