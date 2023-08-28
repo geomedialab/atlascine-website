@@ -5,7 +5,7 @@ translationKey: 'history'
 title: 'History'
 date: 2023-06-11
 ---
-Since its very first version in 2009, the development of Atlascine has been driven by a clear research goal: to translate emerging cartographic principles and concepts into tangible mapping tools and practices. While the original idea was to develop new forms of spatial expressions inspired by cinematographic techniques to address issues raised by critical cartographers (such as the constructed and subjective dimensions of maps), the latest version of this free and open source platform – known internally as Atlascine v4 – has been driven by the influence of contemporary cartographic theories, recent mapping technologies and ethics and practices from Oral history.
+Since its very first version in 2008, the development of Atlascine has been driven by a clear research goal: to translate emerging cartographic principles and concepts into tangible mapping tools and practices. While the original idea was to develop new forms of spatial expressions inspired by cinematographic techniques to address issues raised by critical cartographers (such as the constructed and subjective dimensions of maps), the latest version of this free and open source platform – known internally as Atlascine v4 – has been driven by the influence of contemporary cartographic theories, recent mapping technologies and ethics and practices from Oral history.
 
 The following video tells the story of Atlascine. Documentation on previous versions of Atlascine can be found by visiting our old [Wordpress page](https://atlascineproject.wordpress.com/).
 
@@ -13,24 +13,25 @@ The following video tells the story of Atlascine. Documentation on previous vers
 <iframe src="https://liveconcordia.sharepoint.com/teams/COHDSALLLABWEEKLYMEETING/_layouts/15/embed.aspx?UniqueId=12dee274-fcb4-44e1-9523-eddf511d60a7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen title="Life_Story_of_Atlascine.mp4"></iframe>
 </div>
 
-The following images recall the Atlascine's development since 2009.
+The following images recall the Atlascine's development since 2008.
 
 ## Atlascine 1.0
 
 <img src="/imgs/history2.png" alt="Image of Atlascine history" />
 
-Atlascine 1.0 - Landing page of the Atlas of Canadian Cinematographic Territories released in 2009 and considered as the first version of Atlascine (1.0)
+Atlascine 1.0 - Landing page of the Atlas of Canadian Cinematographic Territories released in 2008 and considered as the first version of Atlascine (1.0) - Some modules of this atlas still work (not all). 
+
 Source: http://atlas.gcrc.carleton.ca/atlascine/Intro/Intro.xml.html
 
 
 <img src="/imgs/history3.png" alt="Image of Atlascine history" />
 
-Atlascine 1.0 - Screen capture of one of the module of the Atlas of Canadian Cinematographic Territories dedicated to the multiple prices received globally by the movie Atanarjuat (2009)
+Atlascine 1.0 - Screen capture of one of the module of the Atlas of Canadian Cinematographic Territories dedicated to the multiple prices received globally by the movie Atanarjuat (2008)
 Source: http://atlas.gcrc.carleton.ca/atlascine/Atanarjuat/Atanar_festivals.xml.html#Festivals_Atanarjuat 
 
 <img src="/imgs/history4.png" alt="Image of Atlascine history" />
 
-Atlascine 1.0 – Screen capture of a cybercartogram that appeared in the Atlas of Canadian Cinematographic (2009) 
+Atlascine 1.0 – Screen capture of a cybercartogram that appeared in the Atlas of Canadian Cinematographic (2008) 
 Source: http://atlas.gcrc.carleton.ca/atlascine/Grapho_cine/Grapho_cine.xml.html#Grapho_Cine
 
 ## Atlascine 2.0
