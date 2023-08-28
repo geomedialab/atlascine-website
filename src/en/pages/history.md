@@ -19,8 +19,7 @@ The following images recall the Atlascine's development since 2008.
 
 <img src="/imgs/history2.png" alt="Image of Atlascine history" />
 
-Atlascine 1.0 - Landing page of the Atlas of Canadian Cinematographic Territories released in 2008 and considered as the first version of Atlascine (1.0) - Some modules of this atlas still work (not all).
-Source: http://atlas.gcrc.carleton.ca/atlascine/Intro/Intro.xml.html
+Atlascine 1.0 - Landing page of the Atlas of Canadian Cinematographic Territories released in 2008 and considered as the first version of Atlascine (1.0) - Some modules of this atlas still work (not all). [Source:](https://atlascineproject.wordpress.com/))
 
 
 <img src="/imgs/history3.png" alt="Image of Atlascine history" />
