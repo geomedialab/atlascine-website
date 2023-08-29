@@ -260,7 +260,7 @@ img {
 .content h1,
 .content h2,
 .content h3 {
-	grid-area: span 1 / span 2;
+	grid-area: span 1 / span 4;
 	text-align: center;
 	padding: 0 0 4vh 0;
 }
