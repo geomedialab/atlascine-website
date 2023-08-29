@@ -10,6 +10,10 @@ The main aim of Atlascine is to streamline the process of transforming audiovisu
 
 Atlascine’s development has been driven by three main principles: (1) the map should not replace the story but accompany it; (2) the mapping process should be as transparent as possible; and (3) the map and the story are to be made fully interconnected in order to expand our ability to navigate within and between stories, their maps and their places. To read more on the history of Atlascine, please visit our [History](/en/history) page.
 
+# News
+
+<iframe style="grid-area: span 2 / span 2; height: 60vh; width: 100%" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmapstodon.space%2Fusers%2Fatlascine&theme=light&size=100&header=false&replies=false&boosts=true"></iframe>
+
 # Aknowledgements
 
 The Atlascine project is led by Sébastien Caquard in close collaboration with Emory Shaw at the Geomedia Lab of Concordia University.

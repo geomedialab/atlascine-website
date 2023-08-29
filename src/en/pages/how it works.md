@@ -2,7 +2,7 @@
 layout: 'basic.html'
 tags: [nav-items, index-pages]
 title: 'How it works'
-date: 2023-06-12
+date: 2023-06-13
 ---
 <!--
 <div style="height:60vh">
