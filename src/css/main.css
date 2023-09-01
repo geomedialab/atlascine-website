@@ -95,6 +95,9 @@ img {
 	max-width: 100%;
 	margin: 0 auto;
 }
+.content img {
+	/*cursor: zoom-in;*/
+}
 
 .content p + img,
 .content h1 + img,
@@ -377,7 +380,7 @@ header a {
 }
 
 .nav-items > a {
-	font-size: calc(var(--font-multiplier) * 1.2rem);
+	font-size: calc(var(--font-multiplier) * 1.4rem);
 	color: var(--button-color);
 }
 
