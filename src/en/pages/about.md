@@ -12,7 +12,7 @@ Atlascine’s development has been driven by three main principles: (1) the map 
 
 # News
 
-<iframe style="grid-area: span 2 / span 2; height: 60vh; width: 100%" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmapstodon.space%2Fusers%2Fatlascine&theme=light&size=100&header=false&replies=false&boosts=true"></iframe>
+<iframe style="height: 60vh; width: 100%" allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmapstodon.space%2Fusers%2Fatlascine&theme=light&size=100&header=false&replies=false&boosts=true"></iframe>
 
 # Aknowledgements
 

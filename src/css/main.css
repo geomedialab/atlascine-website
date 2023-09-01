@@ -118,6 +118,10 @@ img {
 	grid-area: span 1 / span 2;
 }
 
+.content iframe {
+	grid-column: 1 / -1;
+}
+
 /* body */
 
 .grid-container {
@@ -568,66 +572,52 @@ footer > .brands {
 }
 
 @media all and (max-width: 1000px) {
-	.splash-grid-container {
-		grid-template-columns: 1fr;
-		grid-template-areas:
-		"nav nav nav nav nav nav nav"
-	    "title title title title title title title"
-		"note1 note1 note1 note1 note1 note1 note1"
-	    "note2 note2 note2 note2 note2 note2 note2"
-		"img img img img img img img"
-		"note3 note3 note3 note3 note3 note3 note3";
-	}
-	footer {
-		grid-template-areas:
-			"index index index index index index index"
-			"brands brands brands brands brands brands brands";
-	}
-	footer > div:nth-child(1) {
-		text-align: center;
-	}
-	footer > div:nth-child(2) {
-		padding: 0;
-	}
-	.tile-gallery {
-		grid-template-columns: 1fr;
-	}
-}
-
-@media (max-width: 700px) {
 	.grid-container div {
-		grid-column: span 6;
+		grid-column: 1 / -1
 	}
-	.content div, .content h1, .content h2, .content h3, .content p {
-		grid-column: span 6;
+	.content div, .content h1, .content h2, .content h3, .content p, .content iframe {
+		grid-column: 1 / -1;
+	}
+	.content h1 + p, .content h2 + p, .content h3 + p {
+		grid-column: 1 / -1;
+	}
+	.content p + p {
+		grid-column: 1 / -1;
+	}
+	.content img + p {
+		grid-column: 1 / -1;
+	}
+	.content .video + p {
+		grid-column: 1 / -1;
+	}
+	img {
+		max-width: 90vw;
 	}
 	.left-pane {
 		display: none;
 	}
 
 	#landing-content {
-		grid-column: span 6;
+		grid-column: 1 / -1;
 	}
 	footer > .index {
+		text-align: center;
 		grid-template-columns: 1fr;
 		line-height: 2rem;
 	}
 	footer > .brands {
 		grid-template-columns: 1fr;
-		grid-column-start: 2;
-		grid-column-end: 6;
+		grid-column: 2 / -2;
+		padding: 0;
 	}
-	footer > div:nth-child(2) > div {
+	footer > .brands > div {
 		margin: 2vh 0 2vh 0;
 	}
-	.tile-gallery {
-		grid-template-columns: 1fr;
-	}
 	.nav-items > a {
-		grid-column: span 6;
+		grid-column: 1 / -1;
 	}
 	.nav-item svg {
-		margin-bottom: -1%;
+		margin-bottom: -4px;
 	}
 }
 
