@@ -297,7 +297,7 @@ img {
 }
 
 header img {
-	width: 20rem;
+	width: 25rem;
 }
 
 header {
@@ -447,7 +447,7 @@ footer .lang-selector {
 }
 
 footer ul svg {
-	margin-bottom: -1%;
+	margin-bottom: -2px;
 }
 
 footer li::before {
@@ -591,7 +591,7 @@ footer > .brands {
 		grid-column: 1 / -1;
 	}
 	img {
-		max-width: 90vw;
+		grid-column: 1 / -1;
 	}
 	.left-pane {
 		display: none;
