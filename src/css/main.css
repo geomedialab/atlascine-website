@@ -5,14 +5,14 @@
 h1 {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 2em);
+	font-size: calc(var(--font-multiplier) * 2rem);
 	font-weight: bold;
 	text-decoration: none;
 }
 
 h2 {
 	font-family: var(--main-font);
-	font-size: calc(var(--font-multiplier) * 1.5em);
+	font-size: calc(var(--font-multiplier) * 1.5rem);
 	font-weight: bold;
 	font-style: italic;
 	padding:0px 0px 0px 0px;
@@ -29,14 +29,14 @@ h2 {
 h3 {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * .8em);
+	font-size: calc(var(--font-multiplier) * .8rem);
 	font-weight: normal;
 	font-style: italic;
 }
 h4 {
 	font-family: var(--main-font);
 	color: var(--hover-color);
-	font-size: calc(var(--font-multiplier) * .6em);
+	font-size: calc(var(--font-multiplier) * .6rem);
 	font-weight: regular;
 }
 p {
@@ -55,7 +55,7 @@ a {
 span {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * 1.4em);
+	font-size: calc(var(--font-multiplier) * 1.4rem);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -67,7 +67,7 @@ ul {
 li {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
-	font-size: calc(var(--font-multiplier) * .8em);
+	font-size: calc(var(--font-multiplier) * .8rem);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
@@ -76,7 +76,7 @@ li::before {
     margin-right: 0.5em;
 }
 li a {
-	font-size: calc(var(--font-multiplier) * 1.2em);
+	font-size: calc(var(--font-multiplier) * 1.2rem);
 }
 
 button {
@@ -135,13 +135,13 @@ img {
 
 .left-pane {
 	grid-area: span 1 / span 1;
-	font-size: calc(var(--font-multiplier) * 1.2em);
+	font-size: calc(var(--font-multiplier) * 1.2rem);
 }
 
 .left-pane li {
 	list-style-type: none;
-	line-height: calc(var(--font-multiplier) * 1.8em);
-	font-size: calc(var(--font-multiplier) * 1.1em);
+	line-height: calc(var(--font-multiplier) * 1.8rem);
+	font-size: calc(var(--font-multiplier) * 1.1rem);
 }
 
 .left-pane li::before {
@@ -174,6 +174,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 }
 
 .image {
@@ -303,7 +304,7 @@ header img {
 header {
 	font-family: var(--main-font);
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * 5em);
+	font-size: calc(var(--font-multiplier) * 5rem);
 	font-weight: bold;
 	margin: 0px 0px 0px 0px;
 	text-decoration: none;
@@ -312,7 +313,7 @@ header a {
 	text-decoration: none;
 	font-weight: bold;
 	color: var(--nav-title-color);
-	font-size: calc(var(--font-multiplier) * .8em);
+	font-size: calc(var(--font-multiplier) * .8rem);
 }
 
 /* nav-items */
@@ -346,7 +347,7 @@ header a {
 	text-decoration: none;
 	font-family: var(--main-font);
 	color: var(--button-color);
-	font-size: calc(var(--font-multiplier) * 1.2em);
+	font-size: calc(var(--font-multiplier) * 1.2rem);
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -366,15 +367,17 @@ header a {
 
 #open {
 	flex-direction: column;
+	height: calc(var(--font-multiplier) * 2rem);
 }
 
 #close {
 	display: none;
 	flex-direction: column;
+	height: calc(var(--font-multiplier) * 2rem);
 }
 
 .nav-items > a {
-	font-size: calc(var(--font-multiplier) * 1.2em);
+	font-size: calc(var(--font-multiplier) * 1.2rem);
 	color: var(--button-color);
 }
 
@@ -409,7 +412,8 @@ footer .lang-selector a {
 }
 
 .nav-item svg {
-	margin-bottom: -3%;
+	margin-bottom: -4px;
+	height: calc(var(--font-multiplier) * 1rem);
 }
 
 .inline-grid {
@@ -448,6 +452,7 @@ footer .lang-selector {
 
 footer ul svg {
 	margin-bottom: -2px;
+	height: calc(var(--font-multiplier) * 1rem);
 }
 
 footer li::before {
@@ -457,21 +462,21 @@ footer li::before {
 
 footer li a {
 	font-family: var(--main-font);
-	font-size: calc(var(--font-multiplier) * 1.3em);
+	font-size: calc(var(--font-multiplier) * 1.3rem);
 	color: var(--link-color);
 	text-decoration: none;
 }
 
 footer h2 {
 	font-family: var(--main-font);
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * 1rem);
 	color: var(--link-color);
 	text-decoration: none;
 	filter: invert(.4);
 }
 
 footer p {
-	font-size: calc(var(--font-multiplier) * 0.6em);
+	font-size: calc(var(--font-multiplier) * 0.6rem);
 	line-height: calc(var(--font-multiplier) * .75rem);
 	filter: invert(.6);
 	padding:0px 0px 0px 0px;
@@ -543,7 +548,7 @@ footer > .brands {
 	display: -webkit-box;
 	-webkit-line-clamp: 50; /* Number of lines to show */
 	-webkit-box-orient: vertical;
-	font-size: calc(var(--font-multiplier) * 1em);
+	font-size: calc(var(--font-multiplier) * 1rem);
 }
 
 
@@ -565,18 +570,16 @@ footer > .brands {
 
 /** Mobile CSS **/
 
-@media all and (max-width: 2000px) {
-	.tile-gallery {
-		grid-template-columns: 1fr;
-	}
-}
-
 @media all and (max-width: 1000px) {
+	body {
+		--font-multiplier: 2;
+	}
 	.grid-container div {
 		grid-column: 1 / -1
 	}
 	.content div, .content h1, .content h2, .content h3, .content p, .content iframe {
 		grid-column: 1 / -1;
+		overflow-x: hidden;
 	}
 	.content h1 + p, .content h2 + p, .content h3 + p {
 		grid-column: 1 / -1;
@@ -603,7 +606,7 @@ footer > .brands {
 	footer > .index {
 		text-align: center;
 		grid-template-columns: 1fr;
-		line-height: 2rem;
+		line-height: calc(var(--font-multiplier) * 2rem);
 	}
 	footer > .brands {
 		grid-template-columns: 1fr;
@@ -616,8 +619,10 @@ footer > .brands {
 	.nav-items > a {
 		grid-column: 1 / -1;
 	}
-	.nav-item svg {
-		margin-bottom: -4px;
+}
+@media only screen and (max-device-width: 360px) and (max-device-height: 760px) {
+	body {
+		--font-multiplier: 1;
 	}
 }
 
