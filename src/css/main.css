@@ -415,8 +415,15 @@ footer .lang-selector a {
 }
 
 .nav-item svg {
-	margin-bottom: -4px;
+	height: calc(var(--font-multiplier) * 1.2rem);
+	width: calc(var(--font-multiplier) * 1.2rem);
+	margin-bottom: calc(var(--font-multiplier) * -.30rem);
+}
+
+footer ul svg {
 	height: calc(var(--font-multiplier) * 1rem);
+	width: calc(var(--font-multiplier) * 1rem);
+	margin-bottom: calc(var(--font-multiplier) * -.1rem);
 }
 
 .inline-grid {
@@ -451,11 +458,6 @@ footer ul {
 footer .lang-selector {
 	margin: 0;
 	padding: 0 0 2vh 0;
-}
-
-footer ul svg {
-	margin-bottom: -2px;
-	height: calc(var(--font-multiplier) * 1rem);
 }
 
 footer li::before {
