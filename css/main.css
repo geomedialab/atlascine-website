@@ -415,8 +415,15 @@ footer .lang-selector a {
 }
 
 .nav-item svg {
-	margin-bottom: -4px;
+	height: calc(var(--font-multiplier) * 1.2rem);
+	width: calc(var(--font-multiplier) * 1.2rem);
+	margin-bottom: calc(var(--font-multiplier) * -.30rem);
+}
+
+footer ul svg {
 	height: calc(var(--font-multiplier) * 1rem);
+	width: calc(var(--font-multiplier) * 1rem);
+	margin-bottom: calc(var(--font-multiplier) * -.1rem);
 }
 
 .inline-grid {
@@ -451,11 +458,6 @@ footer ul {
 footer .lang-selector {
 	margin: 0;
 	padding: 0 0 2vh 0;
-}
-
-footer ul svg {
-	margin-bottom: -2px;
-	height: calc(var(--font-multiplier) * 1rem);
 }
 
 footer li::before {
@@ -577,6 +579,9 @@ footer > .brands {
 	body {
 		--font-multiplier: 2;
 	}
+	.grid-container {
+		grid-row-gap: calc(var(--font-multiplier) * 2rem);
+	}
 	.grid-container div {
 		grid-column: 1 / -1
 	}
@@ -608,7 +613,7 @@ footer > .brands {
 	}
 	footer > .index {
 		text-align: center;
-		grid-template-columns: 1fr;
+		padding: calc(var(--font-multiplier) * 2rem) 0 0 0;
 		line-height: calc(var(--font-multiplier) * 2rem);
 	}
 	footer > .brands {
@@ -619,8 +624,15 @@ footer > .brands {
 	footer > .brands > div {
 		margin: 2vh 0 2vh 0;
 	}
-	.nav-items > a {
+	footer ul {
+		padding-bottom: calc(var(--font-multiplier) * 2rem);
+	}
+	footer {
+		margin-top: calc(var(--font-multiplier) * 2rem);
+	}
+	.nav-items > a, .nav-items > div {
 		grid-column: 1 / -1;
+		padding: 2vh 0 2vh 0;
 	}
 }
 @media only screen and (max-device-width: 360px) and (max-device-height: 760px) {
