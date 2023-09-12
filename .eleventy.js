@@ -10,6 +10,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("fr", function (collection) {
     return collection.getFilteredByGlob("./src/fr/**/*.+(md|njk)");
   });
+  //following snippet from https://cfjedimaster.github.io/eleventy-blog-guide/guide.html
+  eleventyConfig.addShortcode('excerpt', post => extractExcerpt(post));
+	function extractExcerpt(post) {
+		if(!post.templateContent) return '';
+		if(post.templateContent.indexOf('</p>') > 0) {
+			let end = post.templateContent.indexOf('</p>');
+			return post.templateContent.substr(0, end);
+		}
+		return post.templateContent;
+	}
   // Custom data function to set the buildTime
   eleventyConfig.addGlobalData('buildTime', () => {
     return new Date().toISOString().slice(0, 10);
