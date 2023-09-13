@@ -1,4 +1,12 @@
+// Import prior to `module.exports` within `.eleventy.js`
+const { DateTime } = require("luxon");
+
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addFilter("formatDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toISODate();
+  });
+
   eleventyConfig.addPassthroughCopy("src/imgs/");//add folders to public
   eleventyConfig.addPassthroughCopy("src/js/");
   eleventyConfig.addPassthroughCopy("CNAME");

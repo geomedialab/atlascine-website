@@ -1,7 +1,5 @@
 ---
-title: yea
-date: 2022-01-12
-categories: ["javascript","cats"]
+title: ok
 ---
 
 Whatever sit in box human is in bath tub, emergency! drowning! meooowww!. Mmmmmmmmmeeeeeeeeooooooooowwwwwwww. Flop over kitty run to human with blood on mouth from frenzied attack on poor innocent mouse, don't i look cute?. Meowing chowing and wowing poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from ndoned! meeooowwww!!! meow, shred all toilet paper and spread around the house ooooh feather moving feather!. There's a forty year old lady there let us feast. Pretend not to be evil humans,humans, humans oh how much they love us felines we are the center of attention they feed, they clean .

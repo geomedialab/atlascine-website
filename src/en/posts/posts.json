@@ -1,4 +1,5 @@
 {
     "permalink": "{{ lang }}/blog/{{ title | slugify }}/",
-    "tags": "post"
+    "tags": "post",
+    "date": "Last Modified"
 }
