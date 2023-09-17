@@ -265,6 +265,20 @@ img {
 	column-gap: 3vw;
 }
 
+#gallery-content {
+	grid-area: span 2 / span 6;
+	scroll-behavior: smooth;
+	display: grid;
+	grid-template-columns: repeat( 6, 1fr );
+	grid-row-gap: 5vh;
+	column-gap: 3vw;
+}
+
+#gallery-content p, #gallery-content h1 {
+	grid-area: span 2 / span 6;
+}
+
+
 #landing-content {
 	grid-column: span 2;
 }
@@ -511,15 +525,15 @@ footer > .brands {
 
 .tile-gallery {
 	display: grid;
-  	grid-template-columns: repeat(1, 1fr);
+  	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1.5vw;
-	grid-area: span 1 / span 2;
+	grid-area: span 1 / span 6;
 }
 
 .tile-gallery > a {
 	grid-area: span 1 / span 1;
 	text-decoration: none;
-	height: 50vh;
+	height: 45vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -575,6 +589,15 @@ footer > .brands {
 
 /** Mobile CSS **/
 
+
+@media all and (max-width: 1500px) {
+	.tile-gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.tile-gallery > a {
+		height: 75vh;
+	}
+}
 @media all and (max-width: 1000px) {
 	body {
 		--font-multiplier: 2;
@@ -633,6 +656,9 @@ footer > .brands {
 	.nav-items > a, .nav-items > div {
 		grid-column: 1 / -1;
 		padding: 2vh 0 2vh 0;
+	}
+	.tile-gallery > a {
+		height: 55vh;
 	}
 }
 @media only screen and (max-device-width: 360px) and (max-device-height: 760px) {

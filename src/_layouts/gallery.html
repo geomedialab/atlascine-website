@@ -3,22 +3,11 @@
 	{% include 'head.html' %}
 	<body>
 		<div class='grid-container'>
-			{% set basicpage = true %}
 			{% include 'navbar.html' %}
-			<div class="left-pane vertical-centre">
-				<!--{% include 'list-index-pages.html' %}-->
-			</div>
-			<div class="content">
+			<div id="gallery-content" class="content">
 				<h1>{{ title }}</h1>
 				{{ content | main | safe }}
 			</div>
-			<!--
-			<div class="note2">
-				<p>
-					{{ content | sidenote | safe }}
-				<p>
-			</div>
-			-->
 		</div>
 		{% include 'footer.html' %}
 	</body>

@@ -1,4 +1,5 @@
 {
     "lang": "en",
-    "permalink": "/{{ lang }}/{{ title | slugify }}/"
+    "permalink": "/{{ lang }}/{{ title | slugify }}/",
+    "date": "Last Modified"
 }
