@@ -275,7 +275,10 @@ img {
 }
 
 #gallery-content p, #gallery-content h1 {
-	grid-area: span 2 / span 6;
+	grid-column: span 6;
+}
+#gallery-content h1 {
+	text-align: center;
 }
 
 
@@ -531,7 +534,6 @@ footer > .brands {
 }
 
 .tile-gallery > a {
-	grid-area: span 1 / span 1;
 	text-decoration: none;
 	height: 45vh;
 	display: flex;
@@ -570,7 +572,23 @@ footer > .brands {
 	font-size: calc(var(--font-multiplier) * 1rem);
 }
 
+/* blogroll */
 
+.date {
+}
+
+.post {
+	border-radius: 10px 10px 0 0;
+	border-width: 8px 8px 4px 8px;
+	border-style: ridge ridge dotted ridge;
+	border-color: black;
+	padding: var(--content-gap);
+	max-height: 40vh;
+	overflow-wrap: break-word;
+	overflow-y: hidden;
+	grid-column: span 2;
+	text-decoration: none;
+}
 
 
 

@@ -1,5 +1,8 @@
 
 {% for post in collections.post %}
-<a href="{{post.url}}">{{ post.data.title }}</a> - {{ post.date | formatDate }}
-{% excerpt post %}
+<a href="{{post.url}}" class="post">
+    <p class="date">{{ post.date | formatDate }}</p>
+    <p>{{ post.data.title }}</p>
+    <p>{% excerpt post %}</p>
+</a>
 {% endfor %}
