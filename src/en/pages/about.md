@@ -4,6 +4,7 @@ tags: [nav-items, index-pages]
 translationKey: "about"
 title: 'About'
 date: 2023-06-14
+description: 'About Atlascine'
 ---
 
 The main aim of Atlascine is to streamline the process of transforming audiovisual material into a digital map and to enable a direct interface between audiovisual material, text and the map. With the latest version of the platform, researchers in many disciplines can use the map not only as a way to visually synthesize large volumes of annotated stories and to identify new patterns and structures in these stories, but also to navigate within the stories themselves and find specific events that link stories and places.

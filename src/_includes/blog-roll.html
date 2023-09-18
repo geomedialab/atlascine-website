@@ -1,8 +1,11 @@
-
-{% for post in collections.post %}
-<a href="{{post.url}}" class="post">
-    <p class="date">{{ post.date | formatDate }}</p>
-    <p>{{ post.data.title }}</p>
-    <p>{% excerpt post %}</p>
-</a>
-{% endfor %}
+{% if not collections.post %}
+    <p>No posts to display.</p>
+{% else %}
+    {% for post in collections.post | reverse %}
+        <a href="{{post.url}}" class="post">
+            <p class="date">{{ post.date | formatDate }}</p>
+            <h2>{{ post.data.title }}</h2>
+            <p>{% excerpt post %}</p>
+        </a>
+    {% endfor %}
+{% endif %}

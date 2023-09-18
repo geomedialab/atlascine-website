@@ -18,7 +18,7 @@ h2 {
 	padding:0px 0px 0px 0px;
 }
 
-.content h2::after {
+.content > h2::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -47,6 +47,7 @@ p {
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 	margin: 0 0 0 0;
+	overflow-wrap: break-word;
 }
 
 a {
@@ -99,10 +100,10 @@ img {
 	/*cursor: zoom-in;*/
 }
 
-.content p + img,
-.content h1 + img,
-.content h2 + img,
-.content h3 + img {
+.content > p + img,
+.content > h1 + img,
+.content > h2 + img,
+.content > h3 + img {
 	padding: 0 0 5vh 0;
 }
 
@@ -286,27 +287,27 @@ img {
 	grid-column: span 2;
 }
 
-.content h1,
-.content h2,
-.content h3 {
+.content > h1,
+.content > h2,
+.content > h3 {
 	grid-area: span 1 / span 2;
 	text-align: center;
 	padding: 0 0 4vh 0;
 }
 
-.content h1 + p,
-.content h2 + p,
-.content h3 + p {
+.content > h1 + p,
+.content > h2 + p,
+.content > h3 + p {
 	grid-area: span 1 / span 2;
 }
 
-.content p + p {
+.content > p + p {
 	grid-area: span 1 / span 2;
 }
 
-.content p + h1,
-.content p + h2,
-.content p + h3 {
+.content > p + h1,
+.content > p + h2,
+.content > p + h3 {
 	margin: 10vh 0 0 0;
 }
 
@@ -578,15 +579,15 @@ footer > .brands {
 }
 
 .post {
-	border-radius: 10px 10px 0 0;
-	border-width: 8px 8px 4px 8px;
-	border-style: ridge ridge dotted ridge;
-	border-color: black;
+	border-radius: 20px 20px 0 0;
+	border-width: 2px 2px 2px 12px;
+	border-style: solid solid dashed solid;
+	border-color: var(--caption-color);
 	padding: var(--content-gap);
 	max-height: 40vh;
 	overflow-wrap: break-word;
 	overflow-y: hidden;
-	grid-column: span 2;
+	grid-column: 1 / -1;
 	text-decoration: none;
 }
 
