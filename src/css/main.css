@@ -133,8 +133,8 @@ img {
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(auto-fill, 1fr);
 	padding: 4vh 3vw 4vh 3vw;
-	grid-row-gap: 2vh;
-	column-gap: 2vw;
+	grid-row-gap: 10vh;
+	grid-column-gap: 3vw;
 }
 
 .left-pane {
@@ -258,7 +258,7 @@ img {
 }
 
 .content {
-	grid-area: span 2 / span 4;
+	grid-column: 2 / -2;
 	scroll-behavior: smooth;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25vw, max-content));
@@ -271,8 +271,9 @@ img {
 	scroll-behavior: smooth;
 	display: grid;
 	grid-template-columns: repeat( 6, 1fr );
-	grid-row-gap: 5vh;
+	grid-row-gap: 10vh;
 	column-gap: 3vw;
+	/*padding: 3vw;*/
 }
 
 #gallery-content p, #gallery-content h1 {
@@ -530,8 +531,8 @@ footer > .brands {
 .tile-gallery {
 	display: grid;
   	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1.5vw;
-	grid-area: span 1 / span 6;
+	grid-column: 1 / -1;
+	grid-gap: 5vw;
 }
 
 .tile-gallery > a {
@@ -541,6 +542,8 @@ footer > .brands {
 	flex-direction: column;
 	justify-content: space-between;
 	overflow: hidden;
+	outline-style: solid;
+	outline-color: var(--nav-title-color);
 }
 
 .tile-gallery > a > div {
@@ -579,7 +582,7 @@ footer > .brands {
 }
 
 .post {
-	border-radius: 20px 20px 0 0;
+	border-radius: 0 0 0 0;
 	border-width: 2px 2px 2px 12px;
 	border-style: solid solid dashed solid;
 	border-color: var(--caption-color);
@@ -609,7 +612,7 @@ footer > .brands {
 /** Mobile CSS **/
 
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1200px) {
 	.tile-gallery {
 		grid-template-columns: repeat(1, 1fr);
 	}
