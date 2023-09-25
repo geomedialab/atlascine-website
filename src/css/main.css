@@ -320,7 +320,7 @@ img {
 }
 
 header img {
-	width: calc(var(--font-multiplier) * 25rem);
+	width: calc(var(--font-multiplier) * 15rem);
 }
 
 header {
