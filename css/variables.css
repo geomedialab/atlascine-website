@@ -23,7 +23,7 @@ body {
 	--default-item-color: rgb(200,200,200);
 	--navheight: 10vh;
 	/*--main-font: var(--main-font);*/
-	--main-font: Georgia;
+	--main-font: Tahoma;
     z-index: 1;
     margin: auto 0; 
 	font-size: 1rem;
