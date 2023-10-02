@@ -326,7 +326,7 @@ video {
 }
 
 header img {
-	width: calc(var(--font-multiplier) * 15vw);
+	width: calc(var(--font-multiplier) * 20vw);
 }
 
 header {
