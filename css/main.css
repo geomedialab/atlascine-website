@@ -110,6 +110,7 @@ img {
 .content img + p {
 	grid-area: span 1 / span 1;
 	padding: 0 0 5vh 0;
+	font-style: italic;
 }
 
 .video {
@@ -187,6 +188,11 @@ img {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: all 0.2s ease-in-out;
+}
+video {
+	grid-column: span 4;
+	width: 100%;
 	transition: all 0.2s ease-in-out;
 }
 /*
@@ -621,6 +627,9 @@ footer > .brands {
 	}
 }
 @media all and (max-width: 1000px) {
+	video {
+		grid-column: 1 / -1;
+	}
 	body {
 		--font-multiplier: 2;
 	}
