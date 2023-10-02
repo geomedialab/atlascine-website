@@ -326,7 +326,7 @@ video {
 }
 
 header img {
-	width: calc(var(--font-multiplier) * 15vw);
+	width: calc(var(--font-multiplier) * 20vw);
 }
 
 header {
@@ -394,12 +394,12 @@ header a {
 }
 
 #open {
+	display: none;
 	flex-direction: column;
 	height: calc(var(--font-multiplier) * 2rem);
 }
 
 #close {
-	display: none;
 	flex-direction: column;
 	height: calc(var(--font-multiplier) * 2rem);
 }
