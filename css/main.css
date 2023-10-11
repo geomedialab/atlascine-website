@@ -136,6 +136,7 @@ img {
 	padding: 4vh 3vw 4vh 3vw;
 	grid-row-gap: 10vh;
 	grid-column-gap: 3vw;
+	justify-items: center;
 }
 
 .left-pane {
@@ -192,7 +193,7 @@ img {
 }
 video {
 	grid-column: span 4;
-	width: 100%;
+	width: 85%;
 	transition: all 0.2s ease-in-out;
 }
 /*
@@ -570,7 +571,10 @@ footer > .brands {
 	background-color: aliceblue;
 	position: relative;
 	height: 100%;
-	padding: 5vw;
+	padding: 2vh 5vw 0 5vw;
+  	display: flex;
+  	flex-direction: column;
+	justify-content: center;
 }
 
 .tile-gallery > a > div > div > p {
