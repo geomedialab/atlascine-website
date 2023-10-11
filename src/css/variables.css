@@ -22,8 +22,7 @@ body {
 	--item-gap: 0.2rem;
 	--default-item-color: rgb(200,200,200);
 	--navheight: 10vh;
-	/*--main-font: var(--main-font);*/
-	--main-font: 'Josefin Sans', sans-serif;
+	--main-font: Microsoft PhagsPa, sans-serif;
     z-index: 1;
     margin: auto 0; 
 	font-size: 1rem;
