@@ -293,6 +293,7 @@ video {
 
 #landing-content {
 	grid-column: span 2;
+	grid-template-columns: repeat(auto-fill, minmax(25vw, max-content));
 }
 
 .content > h1,
@@ -350,7 +351,7 @@ header a {
 .nav-items {
 	grid-area: span 1 / span 4;
 	display: inline-grid;
-	grid-template-columns: repeat( 6, 1fr );
+	grid-template-columns: repeat( 5, 1fr );
 	/*grid-auto-rows: auto;*/
 	place-items: stretch stretch;
 	grid-column-gap: 0vw;
