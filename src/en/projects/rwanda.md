@@ -4,7 +4,7 @@ title: 'Atlas of Rwandan Exiles'
 translationKey: "rwanda"
 redirect: 'https://rs-atlascine.concordia.ca/rwanda'
 layout: 'basic.html'
-description: 'The Atlas of Rwandan Life Stories is a digital mapping project that explores the multiple methodological, technological, ethical and cartographic aspects of mapping stories, with a particular focus on life stories.'
+description: 'This atlas traces video-recorded life stories of members of the Rwandan-Canadian diaspora. It offers new ways of transmitting, sharing and studying personal and collective stories, using place as an entry point.'
 img: '/imgs/browse-rwanda3.png' # 'https://rs-atlascine.concordia.ca/rwanda/images/1.jpg'
 date: 2023-07-10 # YYYY-MM-DD, oldest appears first in tile-gallery
 ---
