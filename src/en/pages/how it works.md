@@ -9,7 +9,7 @@ date: 2023-06-13
 <iframe credentialless width="100%" height="100%" src="https://www.youtube.com/embed/7pT80nzfJ9E?start=1548" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 -->
-There are three ways of engaging with Atlascine: (1) as a user to learn about a particular story or topic; (2) as a content creator to contribute to an existing story or story collection; (3) or as an atlas manager to set up or manage an entire Atlascine atlas instance. For more detailed documentation on how to use, add content to and administer a self-hosted version of Atlascine, please look at the documentation provided on [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki).
+There are three ways of engaging with Atlascine: (1) as a user to learn about a particular story or topic; (2) as a content creator to contribute to an existing story or atlas; (3) or as an atlas manager to set up or manage an entire Atlascine atlas instance. For more detailed documentation on how to use, add content to and administer a self-hosted version of Atlascine, please look at the documentation provided on [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki).
 
 The **atlas user** can be anyone interested in exploring, listening to, analyzing and presenting the content of an existing atlas. This can be done in two ways:
 
