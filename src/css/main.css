@@ -268,7 +268,7 @@ video {
 	grid-column: 2 / -2;
 	scroll-behavior: smooth;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(25vw, max-content));
+	grid-template-columns: repeat(2, minmax(25vw, max-content));
 	grid-row-gap: 5vh;
 	column-gap: 3vw;
 }
@@ -584,6 +584,10 @@ footer > .brands {
 	-webkit-line-clamp: 50; /* Number of lines to show */
 	-webkit-box-orient: vertical;
 	font-size: calc(var(--font-multiplier) * 1rem);
+}
+
+.content p:first-child {
+	grid-column: span 2;
 }
 
 /* blogroll */
