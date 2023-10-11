@@ -4,7 +4,6 @@
 	<body>
 		<div id="gallery-content" class='grid-container'>
 			{% include 'navbar.html' %}
-			<h1>{{ title }}</h1>
 			{{ content | main | safe }}
 		</div>
 		{% include 'footer.html' %}
