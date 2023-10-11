@@ -674,6 +674,9 @@ footer > .brands {
 	#landing-content {
 		grid-column: 1 / -1;
 	}
+	.content p:first-child {
+		grid-column: 1 / -1;
+	}
 	footer > .index {
 		text-align: center;
 		padding: calc(var(--font-multiplier) * 2rem) 0 0 0;
