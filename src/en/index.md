@@ -6,4 +6,4 @@ permalink: /en/
 redirect_from: /
 ---
 
-Atlascine is an online mapping platform for annotating and navigating stories thematically and geographically. The fully open-source application can serve as both a collaborative research tool and as a publishing platform for exhibiting story collections. In Atlascine, places and themes can be tagged and mapped from video or audio transcripts, enabling users to find connections between them through visualization and deep listening.
+Atlascine is an online mapping platform for annotating audiovisual stories and interviews. Once these stories are annotated, they are automatically transformed into interactive maps, enabling visualization, connection, and listening. With Atlascine, the map doesn't replace the stories; it accompanies, supports, illustrates, and unveils some of their mysteries. Most importantly, it invites us to take the time to listen to them. 

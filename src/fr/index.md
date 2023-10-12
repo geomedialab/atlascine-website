@@ -5,4 +5,4 @@ translationKey: 'index'
 permalink: /fr/
 ---
 
-Atlascine est une plateforme de cartographie en ligne permettant d'annoter et de naviguer dans des histoires de manière thématique et géographique. Cette application entièrement à source ouverte peut être utilisée à la fois comme outil de recherche collaboratif et comme plateforme de publication pour exposer des collections d'histoires. Dans Atlascine, les lieux et les thèmes peuvent être marqués et cartographiés à partir de transcriptions vidéo ou audio, permettant aux utilisateurs de trouver des liens entre eux grâce à la visualisation et à l'écoute attentive.
+Atlascine est une plateforme de cartographie sur Internet permettant d’annoter n’importe quel type de récit audiovisuel. Une fois annoté, les récits sont automatiquement transformés en cartes interactives qui permettent de les visualiser, mais aussi de les relier entre eux et de les écouter. Avec Atlascine, la carte ne remplace pas les récits, elle les accompagne, les supporte, les illustre, dévoile certains de leurs mystères et surtout elle nous invite à prendre le temps de les écouter.  
