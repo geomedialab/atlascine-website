@@ -1,11 +1,14 @@
 // Import prior to `module.exports` within `.eleventy.js`
 const { DateTime } = require("luxon");
+/*
 const markdownIt = require('markdown-it');
 const markdownItReplaceLink = require('markdown-it-replace-link');
+*/
 
 module.exports = function (eleventyConfig) {
+  
+/*
   // https://www.npmjs.com/package/markdown-it-replace-link
-
   eleventyConfig.setLibrary('md', markdownIt({
     html: true,
     linkify: true
@@ -15,7 +18,7 @@ module.exports = function (eleventyConfig) {
       return "https://atlascine.org/en/" + link;//incomplete, need to integrate language dynamically
     }
   }));
-
+*/
   eleventyConfig.addFilter("formatDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toISODate();
   });
