@@ -195,6 +195,9 @@ video {
 	grid-column: span 4;
 	width: 85%;
 	transition: all 0.2s ease-in-out;
+	border-color: #212529;
+	border-width: 5px 5px 5px 7px;
+	border-style: solid;
 }
 /*
 .splash-grid-container {
