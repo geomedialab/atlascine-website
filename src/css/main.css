@@ -196,7 +196,7 @@ video {
 	width: 85%;
 	transition: all 0.2s ease-in-out;
 	border-color: #212529;
-	border-width: 5px 5px 5px 7px;
+	border-width: 3px 3px 1px 5px;
 	border-style: solid;
 }
 /*
