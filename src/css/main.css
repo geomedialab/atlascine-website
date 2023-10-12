@@ -274,6 +274,7 @@ video {
 	grid-template-columns: repeat(2, minmax(25vw, max-content));
 	grid-row-gap: 5vh;
 	column-gap: 3vw;
+	min-height: 35vh;
 }
 
 #gallery-content {
