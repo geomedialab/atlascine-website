@@ -332,6 +332,7 @@ video {
 
 header img {
 	width: calc(var(--font-multiplier) * 65%);
+	max-width: 400px;
 }
 
 header {
