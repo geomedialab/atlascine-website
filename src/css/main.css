@@ -707,6 +707,9 @@ footer > .brands {
 	.tile-gallery > a {
 		height: 55vh;
 	}
+	video {
+		width: 100%;
+	}
 }
 @media only screen and (max-device-width: 360px) and (max-device-height: 760px) {
 	body {
