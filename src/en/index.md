@@ -6,4 +6,4 @@ permalink: /en/
 redirect_from: /
 ---
 
-Atlascine is a mapping platform for annotating transcribed, time-based media, and has already been used in oral history, film studies, urban studies and other qualitative social sciences and humanities research. The online tool allows audiovisual recordings such as interviews to be geographically and thematically visualized in chronological, interactive maps, enabling users to make connections between stories, places and themes through an innovative combination of visualization and deep listening.
+Atlascine is an online platform for annotating and mapping audio and video files. It allows any kinds of stories such as interviews to be geographically and thematically visualized with interactive maps. These automatically generated maps also offer innovative ways of navigating within and between these stories, listening to them and studying their spatial dimensions. This open-source online tool has already been used in oral history, film studies, urban studies and could be relevant for a range of social sciences and humanities research projects. 
