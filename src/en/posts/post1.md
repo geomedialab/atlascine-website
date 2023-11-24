@@ -1,12 +1,3 @@
----
-title: 'Lancement de l'Atlas Raconte-Moi Riopelle'
----
-
-L'Atlas Raconte-Moi Riopelle présente une vingtaine de récits partagés par celles et ceux qui ont croisé la route et l'œuvre de Jean Paul Riopelle. Dans cet atlas conçu avec Atlascine, les cartes permettent de visualiser la géographie de ces récits, mais aussi de naviguer entre eux de manière à offrir de nouvelles possibilités d'écoute.
-
-Pour accéder à l'atlas: https://rs-atlascine.concordia.ca/riopelle/index.html
-
-Pour accéder au lancement du projet Raconte-moi Riopelle: https://www.youtube.com/watch?v=6c5-1zg8Aqg&t=2s
 
 ---
 title: 'Launch of the Atlascine Website'
