@@ -1,6 +1,6 @@
 ---
 tags: projects
-title: 'Atlas des exilés rwandais'
+title: 'Atlas des récits de vie rwandais'
 translationKey: "rwanda"
 layout: 'basic.html'
 description: 'The Atlas of Rwandan Life Stories is a digital mapping project that explores the multiple methodological, technological, ethical and cartographic aspects of mapping stories, with a particular focus on life stories.'
