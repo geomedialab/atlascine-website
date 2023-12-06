@@ -4,7 +4,7 @@ title: 'Tell Me About Riopelle'
 permalink: false
 redirect: 'https://rs-atlascine.concordia.ca/riopelle'
 img: 'https://storytelling.concordia.ca/wp-content/uploads/2022/01/Jean-Paul-Riopelle-at-his-Atelier-Durantin-in-Paris-1952-Photo-John-Craven-1030x699.jpeg' #'/imgs/browse-riopelle.png'
-description: "This project maps 16 oral history interviews about the life and work of artist Jean-Paul Riopelle. This digital audiovisual archive deepens our understanding of the life and career of this world-renowned artist."
+description: "This project maps 17 oral history interviews about the life and work of artist Jean-Paul Riopelle. This digital audiovisual archive deepens our understanding of the life and career of this world-renowned artist."
 date: 2023-08-10 # YYYY-MM-DD, oldest appears first in tile-gallery
 ---
 
