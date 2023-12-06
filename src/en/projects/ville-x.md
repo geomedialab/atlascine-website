@@ -4,7 +4,7 @@ title: 'La Ville Extraordinaire'
 permalink: false
 redirect: 'https://rs-atlascine.concordia.ca/la-ville-extraordinaire'
 img: 'https://storytelling.concordia.ca/wp-content/uploads/2020/10/Cynthia-Hammond-Ville-extraordinaire-resized.jpg' # '/imgs/browse-villex.png'
-description: "Working with oral history and place-based research-creation methods, La Ville Extraordinaire foregrounds the urban knowledge of four diverse groups of older Montrealers. The project will culminate in an exhibition at the Centre des mémoires montréalaises, a new museum dedicated to living memory in a multicultural city."
+description: "Working with oral history and place-based research-creation methods, La Ville Extraordinaire foregrounds the urban knowledge of four diverse groups of older Montrealers through the mapping of about 80 interviews."
 date: 2023-07-11 # YYYY-MM-DD, oldest appears first in tile-gallery
 ---
 
