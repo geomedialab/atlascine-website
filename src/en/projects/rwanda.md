@@ -1,6 +1,6 @@
 ---
 tags: projects
-title: 'Atlas of Rwandan Exiles'
+title: 'Atlas of Rwandan Life Stories'
 translationKey: "rwanda"
 redirect: 'https://rs-atlascine.concordia.ca/rwanda'
 layout: 'basic.html'
