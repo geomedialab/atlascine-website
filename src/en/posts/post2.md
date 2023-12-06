@@ -1,4 +1,3 @@
-
 ---
 title: 'Lancement de l'atlas Raconte moi Riopelle!'
 ---
