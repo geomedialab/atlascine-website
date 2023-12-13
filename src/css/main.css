@@ -39,7 +39,7 @@ h4 {
 	font-size: calc(var(--font-multiplier) * .6rem);
 	font-weight: regular;
 }
-p {
+p, ul {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * 1.2rem);
@@ -53,16 +53,17 @@ p {
 a {
 	color: var(--link-color);
 }
+
+ul {
+	list-style: none;
+}
+
 span {
 	font-family: var(--main-font);
 	color: var(--main-text-color);
 	font-size: calc(var(--font-multiplier) * 1.4rem);
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
-}
-ul {
-	list-style: none;
-    padding: 0;
 }
 
 li {
@@ -72,10 +73,7 @@ li {
 	font-weight: normal;
 	padding:0px 0px 0px 0px;
 }
-li::before {
-    content: "—";
-    margin-right: 0.5em;
-}
+
 li a {
 	font-size: calc(var(--font-multiplier) * 1.2rem);
 }
@@ -105,6 +103,10 @@ img {
 .content > h2 + img,
 .content > h3 + img {
 	padding: 0 0 5vh 0;
+}
+
+.content > .video + h1 {
+	margin-top: 4vh;
 }
 
 .content img + p {
@@ -304,14 +306,18 @@ video {
 .content > h2,
 .content > h3 {
 	grid-area: span 1 / span 2;
-	text-align: center;
-	padding: 0 0 4vh 0;
 }
 
 .content > h1 + p,
 .content > h2 + p,
-.content > h3 + p {
+.content > h3 + p,
+.content > ul {
 	grid-area: span 1 / span 2;
+}
+
+.content > ul {
+	list-style-type: "+";
+	list-style-position: inside;
 }
 
 .content > p + p {
@@ -321,7 +327,7 @@ video {
 .content > p + h1,
 .content > p + h2,
 .content > p + h3 {
-	margin: 10vh 0 0 0;
+	margin: 0 0 0 0;
 }
 
 /* header */
@@ -711,6 +717,11 @@ footer > .brands {
 	video {
 		width: 100%;
 	}
+	.content > h1,
+	.content > h2,
+	.content > h3 {
+		text-align: center;
+}
 }
 @media only screen and (max-device-width: 360px) and (max-device-height: 760px) {
 	body {
