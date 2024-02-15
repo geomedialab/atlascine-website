@@ -1,5 +1,6 @@
 ---
 title: "Lancement de l'atlas Raconte moi Riopelle!"
+date: '2023-11-23'
 ---
 
 L'Atlas Raconte-Moi Riopelle présente une vingtaine de récits partagés par celles et ceux qui ont croisé la route et l'œuvre de Jean Paul Riopelle. Dans cet atlas développé avec Atlascine, les cartes permettent de visualiser la géographie de ces récits, mais aussi de naviguer entre eux de manière à offrir de nouvelles possibilités d'écoute.
