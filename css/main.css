@@ -277,7 +277,6 @@ video {
 	grid-template-columns: repeat(2, minmax(25vw, max-content));
 	grid-row-gap: 5vh;
 	column-gap: 3vw;
-	min-height: 35vh;
 }
 
 #gallery-content {
@@ -485,7 +484,7 @@ footer {
 	place-items: stretch stretch;
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-rows: repeat(auto-fill, 1fr);
-	margin-top: 5vh;
+	margin-top: 20vh;
 	padding: 2vh 2vw 2vh 2vw;
 }
 
