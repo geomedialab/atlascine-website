@@ -197,9 +197,10 @@ video {
 	grid-column: span 4;
 	width: 85%;
 	transition: all 0.2s ease-in-out;
-	border-color: #212529;
-	border-width: 3px 3px 1px 5px;
-	border-style: solid;
+	outline-color: #212529;
+	outline-width: 3px 3px 1px 5px;
+	outline-style: solid;
+	border-radius: 5px;
 }
 /*
 .splash-grid-container {
