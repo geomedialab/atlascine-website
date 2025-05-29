@@ -3,24 +3,25 @@ layout: 'basic.html'
 tags: [nav-items, index-pages]
 translationKey: "how it works"
 title: 'How it works'
-date: 2023-06-13
+date: 2025-06-13
 ---
 <!--
 <div style="height:60vh">
 <iframe credentialless width="100%" height="100%" src="https://www.youtube.com/embed/7pT80nzfJ9E?start=1548" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 -->
-There are three ways of engaging with Atlascine: (1) as a user to learn about a particular story or topic; (2) as a content creator to contribute to an existing story or atlas; (3) or as an atlas manager to set up or manage an entire Atlascine atlas instance. For more detailed documentation on how to use, add content to and administer a self-hosted version of Atlascine, please look at the documentation provided on [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki).
+Il existe trois façons d'interagir avec Atlascine : (1) en tant qu'utilisateur pour en savoir plus sur un récit, un corpus d'entrevues ou un sujet particulier ; (2) en tant que créateur de contenu pour contribuer à un récit ou à un atlas existant ; (3) en tant que gestionnaire pour configurer ou gérer un atlas au complet. Pour une documentation plus détaillée sur l'utilisation, l'ajout de contenu et l'administration d'une version d'Atlascine, veuillez consulter la documentation disponible (Github) [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki) - en Anglais seulement.
 
-The **atlas user** can be anyone interested in exploring, listening to, analyzing and presenting the content of an existing atlas. This can be done in two ways:
+**Une utilisatrice d'atlas** peut être toute personne intéressée par l'exploration, l'écoute, l'analyse et la présentation du contenu d'un atlas existant. Cela peut se faire de deux manières (voir les illustrations ci-dessous).
+
+**Les créateurs de contenu** sont des utilisateurs avancés qui peuvent modifier le contenu d'un atlas existant. Par exemple, une créatrice peut ajouter de nouveaux articles, des balises, des lieux, de nouveaux médias ou modifier la légende. 
+
+Finalement, la **gestionnaire d'atlas** supervise le déploiement et la maintenance d'un projet Atlascine. Cette responsable doit maîtriser la gestion de serveurs Linux via une interface de commande en ligne. Elle peut pour cela s'appuyer sur la documentation disponible pour déployer et assurer la maintenance d'un projet Atlascine.
 
 <img src="/imgs/Slide3.jpg" alt="Infographic on Atlascine and how to use it, by Sebastien Caquard"></img>
 
 <img src="/imgs/Slide4.jpg" alt="Infographic on Atlascine and how to use it, by Sebastien Caquard"></img>
 
-**Content creators** are advanced users who can modify the content of an existing atlas. For instance, an atlas contributor could add new stories to an existing atlas, add tags to existing stories, add new media and change the legend. 
-
-Finally, the **atlas manager** oversees the deployment and maintenance of an Atlascine project. The atlas manager needs to be comfortable with Linux server management through a command line interface, but they can rely on the documentation for deploying and maintaining an Atlascine project.
 
 <!--
 This 10 min. video explains the basic functionalities of Atlascine
