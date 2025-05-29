@@ -18,9 +18,9 @@ Il existe trois façons d'interagir avec Atlascine : (1) en tant qu'utilisateur 
 
 Finalement, la **gestionnaire d'atlas** supervise le déploiement et la maintenance d'un projet Atlascine. Cette responsable doit maîtriser la gestion de serveurs Linux via une interface de commande en ligne. Elle peut pour cela s'appuyer sur la documentation disponible pour déployer et assurer la maintenance d'un projet Atlascine.
 
-<img src="/imgs/fonctionnement1.png" alt="Comment utiliser Atlascine - Infographie 1, par Sébastien Caquard"></img>
+<img src="/imgs/Fonctionnement1.png" alt="Comment utiliser Atlascine - Infographie 1, par Sébastien Caquard"></img>
 
-<img src="/imgs/fonctionnement2.png" alt="Comment utiliser Atlascine - Infographie 2, par Sébastien Caquard"></img>
+<img src="/imgs/Fonctionnement2.png" alt="Comment utiliser Atlascine - Infographie 2, par Sébastien Caquard"></img>
 
 
 <!--
