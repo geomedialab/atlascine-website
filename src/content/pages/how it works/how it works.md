@@ -1,4 +1,4 @@
-illustrat---
+---
 layout: 'basic.html'
 tags: [nav-items, index-pages]
 title: 'How it works'
