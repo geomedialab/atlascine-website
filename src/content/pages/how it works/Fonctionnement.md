@@ -1,6 +1,7 @@
 ---
 layout: 'basic.html'
 tags: [nav-items, index-pages]
+translationKey: "how it works"
 title: 'How it works'
 date: 2023-06-13
 ---
