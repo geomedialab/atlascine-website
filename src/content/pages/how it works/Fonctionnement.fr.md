@@ -10,7 +10,7 @@ date: 2025-06-13
 <iframe credentialless width="100%" height="100%" src="https://www.youtube.com/embed/7pT80nzfJ9E?start=1548" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 -->
-Il existe trois façons d'interagir avec Atlascine : (1) en tant qu'utilisateur pour en savoir plus sur un récit, un corpus d'entrevues ou un sujet particulier ; (2) en tant que créateur de contenu pour contribuer à un récit ou à un atlas existant ; (3) en tant que gestionnaire pour configurer ou gérer un atlas au complet. Pour une documentation plus détaillée sur l'utilisation, l'ajout de contenu et l'administration d'une version d'Atlascine, veuillez consulter la documentation disponible (Github) [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki) - en Anglais seulement.
+Il existe trois façons d'interagir avec Atlascine : (1) en tant qu'utilisateur pour en savoir plus sur un récit, un corpus d'entrevues ou un sujet particulier ; (2) en tant que créateur de contenu pour contribuer à un récit ou à un atlas existant ; (3) en tant que gestionnaire pour configurer ou gérer un atlas au complet. Pour une documentation plus détaillée sur l'utilisation, l'ajout de contenu et l'administration d'une version d'Atlascine, veuillez consulter la documentation disponible (Github) [the project's GitHub page](https://github.com/geomedialab/atlascine/wiki) - en anglais seulement.
 
 **Une utilisatrice d'atlas** peut être toute personne intéressée par l'exploration, l'écoute, l'analyse et la présentation du contenu d'un atlas existant. Cela peut se faire de deux manières (voir les illustrations ci-dessous).
 
