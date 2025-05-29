@@ -2,7 +2,7 @@
 layout: 'basic.html'
 tags: [nav-items, index-pages]
 translationKey: "how it works"
-title: 'How it works'
+title: 'Le fonctionnement'
 date: 2025-06-13
 ---
 <!--
@@ -18,9 +18,9 @@ Il existe trois façons d'interagir avec Atlascine : (1) en tant qu'utilisateur 
 
 Finalement, la **gestionnaire d'atlas** supervise le déploiement et la maintenance d'un projet Atlascine. Cette responsable doit maîtriser la gestion de serveurs Linux via une interface de commande en ligne. Elle peut pour cela s'appuyer sur la documentation disponible pour déployer et assurer la maintenance d'un projet Atlascine.
 
-<img src="/imgs/Slide3.jpg" alt="Infographic on Atlascine and how to use it, by Sebastien Caquard"></img>
+<img src="/imgs/fonctionnement1.jpg" alt="Comment utiliser Atlascine - Infographie 1, par Sébastien Caquard"></img>
 
-<img src="/imgs/Slide4.jpg" alt="Infographic on Atlascine and how to use it, by Sebastien Caquard"></img>
+<img src="/imgs/fonctionnement2.jpg" alt="Comment utiliser Atlascine - Infographie 2, par Sébastien Caquard"></img>
 
 
 <!--
