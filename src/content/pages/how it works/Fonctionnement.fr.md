@@ -2,7 +2,7 @@
 layout: 'basic.html'
 tags: [nav-items, index-pages]
 translationKey: "how it works"
-title: 'Le fonctionnement'
+title: 'Fonctionnement'
 date: 2025-06-13
 ---
 <!--
