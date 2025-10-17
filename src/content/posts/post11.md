@@ -1,5 +1,5 @@
 ---
-title: 'Atelier d'initiation à l'art avec Atlascine'
+title: "Atelier d'initiation à l'art avec Atlascine"
 date: '2025-10-16'
 ---
 
