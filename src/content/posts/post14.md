@@ -1,5 +1,5 @@
 ---
-title: “Nouvel atlas à venir - L'atlas des paroles de femmes oubliées"
+title: Nouvel atlas à venir - L'atlas des paroles de femmes oubliées
 date: '2026-06-19'
 ---
 
