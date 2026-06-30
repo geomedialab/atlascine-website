@@ -4,7 +4,7 @@ title: 'Atlas des récits de vie rwandais'
 translationKey: "rwanda"
 redirect: 'https://rs-atlascine.concordia.ca/rwanda'
 layout: 'basic.html'
-description: 'The Atlas of Rwandan Life Stories is a digital mapping project that explores the multiple methodological, technological, ethical and cartographic aspects of mapping stories, with a particular focus on life stories.'
+description: 'Cet atlas retrace les parcours de vie de membres de la diaspora rwandaise-canadienne. Il propose de nouvelles approches pour écouter et étudier des histoires personnelles et collectives, en prenant le lieu comme point de départ.'
 img: 'https://rs-atlascine.concordia.ca/rwanda/images/1.jpg'
 date: 2023-06-28
 ---
