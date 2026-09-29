@@ -1,0 +1,107 @@
+backend:
+  name: github
+  repo: geomedialab/atlascine-website
+  branch: 11ty-site
+
+media_folder: /src/imgs
+public_folder: /imgs
+site_url: https://atlascine.org
+locale: en
+
+# ─────────────────────────────────────────────────────────────
+# i18n: Sveltia CMS creates paired files per locale.
+# With omit_default_locale_from_file_path, EN files have no
+# suffix (.md) and FR files get .fr.md — matching the existing
+# eleventyComputed.js filename-based language detection.
+# ─────────────────────────────────────────────────────────────
+i18n:
+  structure: multiple_files
+  locales: [en, fr]
+  default_locale: en
+  omit_default_locale_from_file_path: true
+
+collections:
+
+  # ─────────────────────────────────────────────────────────────
+  # POSTS — Bilingual news posts (in subfolders)
+  # path template enables subdirectory file discovery.
+  # i18n creates paired EN/FR files in the same folder,
+  # which eleventyComputed.js auto-pairs as translations.
+  # ─────────────────────────────────────────────────────────────
+  - name: posts
+    label: "Posts / Articles"
+    label_singular: "Post / Article"
+    description: >
+      Bilingual posts. Each entry has EN + FR tabs.
+      Files are stored in subfolders for translation pairing.
+    folder: src/content/posts
+    create: true
+    path: "{{slug}}/{{slug}}"
+    # Store uploads in the global folder, not entry-relative subfolders.
+    # A path template makes Sveltia default media to the entry folder,
+    # so set absolute collection-level paths (leading slash = repo root).
+    media_folder: "/src/imgs"
+    public_folder: "/imgs"
+    i18n: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title / Titre", name: title, widget: string, i18n: true }
+      - { label: "Date", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, i18n: duplicate }
+      - { label: "Description (link preview / aperçu du lien)", name: description, widget: text, required: false, i18n: true }
+      - { label: "Content / Contenu", name: body, widget: markdown, i18n: true }
+
+  # ─────────────────────────────────────────────────────────────
+  # PROJECTS — Atlas tiles on the Atlases page; each redirects
+  # to its atlas on rs-atlascine.concordia.ca
+  # ─────────────────────────────────────────────────────────────
+  - name: projects
+    label: "Atlases / Atlas"
+    label_singular: "Atlas"
+    folder: src/content/projects
+    create: true
+    path: "{{slug}}/{{slug}}"
+    media_folder: "/src/imgs"
+    public_folder: "/imgs"
+    i18n: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title / Titre", name: title, widget: string, i18n: true }
+      - { label: "Atlas URL", name: redirect, widget: string, i18n: true, hint: "Link to the atlas on rs-atlascine.concordia.ca" }
+      - { label: "Tile image", name: img, widget: image, required: false, i18n: duplicate }
+      - { label: "Description", name: description, widget: text, required: false, i18n: true }
+      - { label: "Date", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, i18n: duplicate, hint: "Oldest appears first in the gallery" }
+      - { label: "Content / Contenu", name: body, widget: markdown, required: false, i18n: true }
+      - { label: "permalink", name: permalink, widget: hidden, default: false, i18n: duplicate }
+      - { label: "tags", name: tags, widget: hidden, default: projects, i18n: duplicate }
+
+  # ─────────────────────────────────────────────────────────────
+  # PAGES — Static content pages (bilingual, in subfolders)
+  # .njk template pages (atlases, news listing) are not
+  # managed here — only .md content pages.
+  # ─────────────────────────────────────────────────────────────
+  - name: pages
+    label: "Pages"
+    label_singular: "Page"
+    folder: src/content/pages
+    create: true
+    path: "{{slug}}/{{slug}}"
+    media_folder: "/src/imgs"
+    public_folder: "/imgs"
+    i18n: true
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title / Titre", name: title, widget: string, i18n: true }
+      - { label: "Date", name: date, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, required: false, i18n: duplicate }
+      - { label: "Description", name: description, widget: text, required: false, i18n: true }
+      - { label: "External link (optional)", name: redirect, widget: string, required: false, i18n: true, hint: "If set, menu links point here instead of to this page" }
+      - label: "Layout"
+        name: layout
+        widget: select
+        options: [basic.html, basic_fullscrn.html, gallery.html, posts-overview.html]
+        default: basic.html
+        i18n: duplicate
+      - { label: "Tags", name: tags, widget: list, required: false, hint: "Ex: nav-items, index-pages", i18n: duplicate }
+      - { label: "Content / Contenu", name: body, widget: markdown, required: false, i18n: true }
