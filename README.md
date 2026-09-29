@@ -2,17 +2,30 @@
 
 Contains files required to build the Atlascine website located at atlascine.org. Built using Eleventy and Nunjucks, with a custom build process to generate the site in more than one language. Redirect functionality based on [this code](https://gist.github.com/BrianMitchL/f93622a46f4476b7514995ff502d8d17).
 
-## Edit the site via the admin interface / Modifier le site via l'interface d'administration
+## ✏️ Modifier le site via l'interface d'administration / Edit the site via the admin interface
 
-You need a GitHub account with write access to `geomedialab/atlascine-website`.
+Préparations nécessaires / Prerequisites:
+
+- Connectez-vous à votre compte GitHub / Log in to your GitHub account (https://github.com/login)
+- Assurez-vous d'avoir un accès en écriture au dépôt `geomedialab/atlascine-website` / Make sure you have write access to the `geomedialab/atlascine-website` repository.
+
+### FR
+
+1. Rendez-vous sur [github.com/settings/tokens](https://github.com/settings/tokens) et cliquez sur **Generate new token → Generate new token (classic)**.
+2. Donnez-lui un nom (ex. *atlascine admin*), choisissez une expiration (pour faciliter les choses, sélectionnez aucune date d'expiration), et cochez la case **repo** (accès complet, toutes cases cochées) ainsi que **read:user** plus bas.
+3. Cliquez **Generate token** et copiez le token affiché (il ne sera plus visible après).
+4. Rendez-vous sur [atlascine.org/admin](https://atlascine.org/admin/) et choisissez **Sign in with GitHub using token**.
+5. Collez votre token et validez — vous avez accès à l'interface d'édition.
+
+### EN
 
 1. Go to [github.com/settings/tokens](https://github.com/settings/tokens) and click **Generate new token → Generate new token (classic)**.
 2. Give it a name (e.g. *atlascine admin*), choose an expiration, and check **repo** (full access) and **read:user**.
 3. Click **Generate token** and copy the token shown (it won't be visible again).
 4. Go to [atlascine.org/admin](https://atlascine.org/admin/) and choose **Sign in with GitHub using token**.
-5. Paste your token — you can now edit posts, pages and atlases, with EN/FR tabs side by side. Saving commits to the `11ty-site` branch, which rebuilds the site.
+5. Paste your token and confirm — you now have access to the editing interface.
 
-Each post/page/atlas lives in its own subfolder: `<slug>/<slug>.md` (English) and `<slug>/<slug>.fr.md` (French). Two files in the same folder are automatically paired as translations, so `translationKey` is no longer needed.
+Each post/page/atlas has EN/FR tabs and is stored in its own subfolder: `<slug>/<slug>.md` (English) and `<slug>/<slug>.fr.md` (French); two files in the same folder are paired as translations automatically. Saving commits to the `11ty-site` branch, which rebuilds the site.
 
 ## to edit content
 
