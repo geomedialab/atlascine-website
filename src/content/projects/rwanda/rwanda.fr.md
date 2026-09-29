@@ -1,7 +1,6 @@
 ---
 tags: projects
 title: 'Atlas des récits de vie rwandais'
-translationKey: "rwanda"
 redirect: 'https://rs-atlascine.concordia.ca/rwanda'
 layout: 'basic.html'
 description: 'Cet atlas retrace les parcours de vie de membres de la diaspora rwandaise-canadienne. Il propose de nouvelles approches pour écouter et étudier des histoires personnelles et collectives, en prenant le lieu comme point de départ.'

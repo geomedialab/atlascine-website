@@ -1,6 +1,12 @@
 {
-  "title": "Atlascine",
-  "description": "Atlascine is an online tool for mapping stories",
+  "title": {
+    "en": "Atlascine",
+    "fr": "Atlascine"
+  },
+  "description": {
+    "en": "Atlascine is an online tool for mapping stories",
+    "fr": "Atlascine est un outil en ligne pour cartographier des récits"
+  },
   "url": "https://atlascine.org",
   "baseUrl": "/",
   "date": "Created",

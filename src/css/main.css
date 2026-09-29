@@ -78,6 +78,20 @@ li a {
 	font-size: calc(var(--font-multiplier) * 1.2rem);
 }
 
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid var(--main-text-color);
+	padding: 8px;
+	text-align: left;
+	color: var(--main-text-color);
+	font-family: var(--main-font);
+	font-size: calc(var(--font-multiplier) * 1.2rem);
+	line-height: calc(var(--font-multiplier) * 1.5rem);
+}
+
 button {
     cursor: pointer;
     padding: 2px 15px;
@@ -540,6 +554,14 @@ footer li a {
 	font-size: calc(var(--font-multiplier) * 1.3rem);
 	color: var(--link-color);
 	text-decoration: none;
+}
+
+footer li a.index-items {
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+	max-width: 100%;
 }
 
 footer h2 {

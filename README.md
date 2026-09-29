@@ -2,6 +2,18 @@
 
 Contains files required to build the Atlascine website located at atlascine.org. Built using Eleventy and Nunjucks, with a custom build process to generate the site in more than one language. Redirect functionality based on [this code](https://gist.github.com/BrianMitchL/f93622a46f4476b7514995ff502d8d17).
 
+## Edit the site via the admin interface / Modifier le site via l'interface d'administration
+
+You need a GitHub account with write access to `geomedialab/atlascine-website`.
+
+1. Go to [github.com/settings/tokens](https://github.com/settings/tokens) and click **Generate new token → Generate new token (classic)**.
+2. Give it a name (e.g. *atlascine admin*), choose an expiration, and check **repo** (full access) and **read:user**.
+3. Click **Generate token** and copy the token shown (it won't be visible again).
+4. Go to [atlascine.org/admin](https://atlascine.org/admin/) and choose **Sign in with GitHub using token**.
+5. Paste your token — you can now edit posts, pages and atlases, with EN/FR tabs side by side. Saving commits to the `11ty-site` branch, which rebuilds the site.
+
+Each post/page/atlas lives in its own subfolder: `<slug>/<slug>.md` (English) and `<slug>/<slug>.fr.md` (French). Two files in the same folder are automatically paired as translations, so `translationKey` is no longer needed.
+
 ## to edit content
 
 - Find the webpage you want to edit under src/en/ or src/fr/. As you can see, pages are organized into either 'project' or 'pages' subdirectories.

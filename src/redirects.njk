@@ -1,0 +1,19 @@
+---
+# Old URLs of posts that moved into subfolders (required by the CMS); each gets a meta-refresh stub.
+pagination:
+  data: moved
+  size: 1
+  alias: r
+moved:
+  - from: /en/atelier-dinitiation-a-lart-avec-atlascine/
+    to: /en/posts/atelier-dinitiation-a-lart-avec-atlascine/
+  - from: /en/upcoming-atlascine-events-in-april/
+    to: /en/posts/upcoming-atlascine-events-in-april/
+  - from: /en/nouvel-atlas-a-venir-latlas-des-paroles-de-femmes-oubliees/
+    to: /en/posts/nouvel-atlas-a-venir-latlas-des-paroles-de-femmes-oubliees/
+permalink: "{{ r.from }}index.html"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="canonical" href="{{ r.to }}"><meta http-equiv="refresh" content="0; url={{ r.to }}"></head>
+<body><a href="{{ r.to }}">{{ r.to }}</a></body></html>

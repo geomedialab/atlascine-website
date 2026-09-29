@@ -83,6 +83,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/attachments/");
   eleventyConfig.addPassthroughCopy("src/js/");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("src/admin/");
   //eleventyConfig.addPassthroughCopy({ "content/index.en.md": "/index.md" });
   
   //eleventyConfig.addGlobalData("langs", ['en', 'fr']);
@@ -121,6 +122,13 @@ module.exports = function (eleventyConfig) {
   // Custom data function to set the buildTime
   eleventyConfig.addGlobalData('buildTime', () => {
     return new Date().toISOString().slice(0, 10);
+  });
+  // src of the first <img> in rendered content, made absolute for og:image; '' if none
+  eleventyConfig.addFilter('firstImage', (content, origin) => {
+    const m = (content || '').match(/<img[^>]+src="([^"]+)"/);
+    if (!m) return '';
+    const src = m[1].replace(/ /g, '%20');
+    return /^https?:\/\//.test(src) ? src : origin + src;
   });
   eleventyConfig.addFilter('main', (content) => {
     const separator = '<!--section-->';

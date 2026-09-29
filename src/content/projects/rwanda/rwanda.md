@@ -1,7 +1,6 @@
 ---
 tags: projects
 title: 'Atlas of Rwandan Life Stories'
-translationKey: "rwanda"
 redirect: 'https://rs-atlascine.concordia.ca/rwanda'
 layout: 'basic.html'
 description: 'This atlas traces video-recorded life stories of members of the Rwandan-Canadian diaspora. It offers new ways of transmitting, sharing and studying personal and collective stories, using place as an entry point.'

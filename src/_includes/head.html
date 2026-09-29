@@ -1,11 +1,24 @@
 <head>
     <meta charset="UTF-8">
-    <title>{{ site.title }} | {{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title[lang] }} | {{ title }}</title>
     {% if description %}
         <meta name="description" content="{{ description }}">
     {% else %}
-        <meta name="description" content="{{ site.description }}">
+        <meta name="description" content="{{ site.description[lang] }}">
     {% endif %}
+    {% set origin = site.url %}
+    {% set isPost = tags and "post" in tags %}
+    {% set ogImage = "" %}
+    {% if isPost %}{% set ogImage = content | firstImage(origin) %}{% endif %}
+    {% if not ogImage %}{% set ogImage = origin + "/imgs/atlascine-logo.png" %}{% endif %}
+    <meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+    <meta property="og:site_name" content="{{ site.title[lang] }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description or site.description[lang] }}">
+    <meta property="og:url" content="{{ origin }}{{ page.url }}">
+    <meta property="og:image" content="{{ ogImage }}">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="shortcut icon" href="/imgs/atlascine-logo.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/css/variables.css" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
