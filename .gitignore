@@ -8,3 +8,6 @@
 # Visual Studio Code
 /.vscode
 .history
+
+# Local Claude Code context (not part of the site)
+CLAUDE.md
